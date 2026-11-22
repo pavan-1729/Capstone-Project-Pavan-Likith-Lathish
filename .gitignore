@@ -1,0 +1,118 @@
+# ==========================================
+# Operating System Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Secrets & Sensitive Credentials
+# ==========================================
+*.env
+*.env.*
+!.env.example
+!*.env.example
+*serviceAccount*.json
+serviceAccountKey.json
+firebase-service-account.json
+*.pem
+*.key
+*.pkcs12
+*.p12
+*.jks
+*.keystore
+
+# ==========================================
+# Python & Virtual Environments
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+venv*/
+.venv/
+.venv*/
+env/
+env*/
+ENV/
+ENV*/
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# ==========================================
+# Android & Gradle
+# ==========================================
+.gradle/
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+lint/intermediates/
+lint/generated/
+lint/reports/
+
+# Android Studio / IntelliJ IDEA
+*.iml
+.idea/
+*.iws
+*.ipr
+out/
+
+# Android builds
+*.apk
+*.ap_
+*.aab
+*.dex
+
+# ==========================================
+# Java / Maven (Spring Boot Backend)
+# ==========================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# ==========================================
+# VS Code & General Editors
+# ==========================================
+.vscode/
+*.swp
+*.swo
+*~
+*.bak
+
+# ==========================================
+# Log Files
+# ==========================================
+*.log

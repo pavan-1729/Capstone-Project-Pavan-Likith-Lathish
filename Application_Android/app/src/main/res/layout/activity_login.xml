@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+
+        android:padding="@dimen/spacing_lg">
+
+        <!-- Logo -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/spacing_xxl"
+
+            android:text="🌱"
+            android:textSize="56sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/app_name"
+
+            android:textColor="@color/primary"
+            android:textSize="@dimen/text_title"
+            android:textStyle="bold" />
+
+        <!-- Login Title -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/spacing_xl"
+
+            android:text="@string/login_title"
+
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_headline"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/spacing_xs"
+
+            android:text="@string/login_subtitle"
+
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_body" />
+
+        <!-- Demo Hint -->
+
+        <TextView
+            android:id="@+id/tv_demo_hint"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/spacing_md"
+
+            android:background="@drawable/bg_demo_badge"
+
+            android:gravity="center"
+
+            android:padding="@dimen/spacing_sm"
+
+            android:textColor="@color/demo_badge"
+            android:textSize="@dimen/text_caption"
+
+            android:visibility="gone" />
+
+        <!-- Email -->
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/spacing_lg"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/et_mobile_email"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/hint_mobile_email"
+
+                android:inputType="textEmailAddress"
+
+                android:textSize="@dimen/text_subtitle" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password -->
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/spacing_md"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/et_password"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/hint_password"
+
+                android:inputType="textPassword"
+
+                android:textSize="@dimen/text_subtitle" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Forgot Password -->
+
+        <TextView
+
+            android:id="@+id/tv_forgot_password"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="end"
+
+            android:layout_marginTop="@dimen/spacing_sm"
+
+            android:clickable="true"
+            android:focusable="true"
+
+            android:padding="@dimen/spacing_xs"
+
+            android:text="@string/forgot_password"
+
+            android:textColor="@color/primary"
+            android:textSize="@dimen/text_body" />
+
+        <!-- Login -->
+
+        <Button
+
+            android:id="@+id/btn_login"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+
+            android:layout_marginTop="@dimen/spacing_lg"
+
+            android:background="@drawable/bg_button_primary"
+
+            android:text="@string/btn_login"
+
+            android:textAllCaps="false"
+
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/text_subtitle"
+
+            app:backgroundTint="@null" />
+
+        <!-- Progress -->
+
+        <ProgressBar
+
+            android:id="@+id/progress_bar"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/spacing_md"
+
+            android:indeterminateTint="@color/primary"
+
+            android:visibility="gone" />
+
+        <!-- Divider -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/spacing_lg"
+
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal">
+
+            <View
+
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+
+                android:layout_weight="1"
+
+                android:background="@color/divider" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingStart="@dimen/spacing_md"
+                android:paddingEnd="@dimen/spacing_md"
+
+                android:text="@string/or_divider"
+
+                android:textColor="@color/text_hint"
+
+                android:textSize="@dimen/text_body" />
+
+            <View
+
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+
+                android:layout_weight="1"
+
+                android:background="@color/divider" />
+
+        </LinearLayout>
+
+        <!-- Demo -->
+
+        <Button
+
+            android:id="@+id/btn_demo"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+
+            android:layout_marginTop="@dimen/spacing_md"
+
+            android:background="@drawable/bg_button_secondary"
+
+            android:text="@string/continue_as_demo"
+
+            android:textAllCaps="false"
+
+            android:textColor="@color/primary"
+
+            android:textSize="@dimen/text_body"
+
+            app:backgroundTint="@null" />
+
+        <!-- Create Account -->
+
+        <TextView
+
+            android:id="@+id/tv_create_account"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/spacing_lg"
+            android:layout_marginBottom="@dimen/spacing_xl"
+
+            android:clickable="true"
+            android:focusable="true"
+
+            android:padding="@dimen/spacing_sm"
+
+            android:text="@string/create_account"
+
+            android:textColor="@color/primary"
+
+            android:textSize="@dimen/text_body"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

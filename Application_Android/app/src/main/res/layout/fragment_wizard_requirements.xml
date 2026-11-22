@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_lg">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/wizard_requirements_title" android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_title" android:textStyle="bold" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_lg" android:text="@string/max_maturity_label"
+            android:textColor="@color/text_secondary" android:textSize="@dimen/text_body" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_sm" android:gravity="center_vertical" android:orientation="horizontal">
+            <SeekBar android:id="@+id/seek_maturity"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:progressTint="@color/primary" android:thumbTint="@color/primary" />
+            <TextView android:id="@+id/tv_maturity_value"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_md" android:textColor="@color/primary"
+                android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/tv_maturity_hint"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs" android:text="@string/maturity_range_hint"
+            android:textColor="@color/text_hint" android:textSize="@dimen/text_caption" />
+
+        <!-- Summary -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xxl" android:text="@string/ready_to_find"
+            android:textColor="@color/text_primary" android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_sm" android:text="@string/ready_to_find_desc"
+            android:textColor="@color/text_secondary" android:textSize="@dimen/text_body"
+            android:lineSpacingExtra="4dp" />
+    </LinearLayout>
+</ScrollView>

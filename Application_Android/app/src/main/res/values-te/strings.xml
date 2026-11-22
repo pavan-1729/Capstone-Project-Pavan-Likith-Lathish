@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ఫార్మర్-అవేర్</string>
+    <string name="demo_mode_label">డెమో మోడ్</string>
+    <string name="demo_data_label">డెమో డేటా</string>
+    <string name="btn_continue">కొనసాగించు</string>
+    <string name="btn_next">తదుపరి</string>
+    <string name="btn_back">వెనుకకు</string>
+    <string name="btn_submit">సమర్పించు</string>
+    <string name="btn_cancel">రద్దు</string>
+    <string name="btn_save">భద్రపరచు</string>
+    <string name="btn_close">మూసివేయి</string>
+    <string name="btn_retry">మళ్ళీ ప్రయత్నించు</string>
+    <string name="not_available">అందుబాటులో లేదు</string>
+    <string name="loading">లోడ్ అవుతోంది…</string>
+    <string name="ok">సరే</string>
+
+    <string name="splash_title">ఫార్మర్-అవేర్</string>
+    <string name="splash_subtitle">రైతు-అనుకూల వాతావరణ-అనుకూల విత్తన సిఫార్సు</string>
+    <string name="splash_research">రిట్రీవల్-ఆగ్మెంటెడ్ వ్యవసాయ జ్ఞానం ఉపయోగించి</string>
+
+    <string name="choose_language">మీ భాషను ఎంచుకోండి</string>
+    <string name="login_title">తిరిగి స్వాగతం</string>
+    <string name="login_subtitle">మీ ఖాతాలో సైన్ ఇన్ చేయండి</string>
+    <string name="hint_mobile_email">మొబైల్ నంబర్ / ఇమెయిల్</string>
+    <string name="hint_password">పాస్‌వర్డ్</string>
+    <string name="btn_login">లాగిన్</string>
+    <string name="forgot_password">పాస్‌వర్డ్ మర్చిపోయారా?</string>
+    <string name="create_account">ఖాతా సృష్టించు</string>
+    <string name="continue_as_demo">డెమో రైతుగా కొనసాగించు</string>
+    <string name="login_error_invalid">చెల్లని మొబైల్/ఇమెయిల్ లేదా పాస్‌వర్డ్</string>
+    <string name="login_success">లాగిన్ విజయవంతం</string>
+
+    <string name="register_title">ఖాతా సృష్టించు</string>
+    <string name="hint_full_name">పూర్తి పేరు</string>
+    <string name="hint_mobile">మొబైల్ నంబర్</string>
+    <string name="hint_email">ఇమెయిల్</string>
+    <string name="hint_confirm_password">పాస్‌వర్డ్ నిర్ధారించు</string>
+    <string name="farmer_information">రైతు సమాచారం</string>
+    <string name="label_state">రాష్ట్రం</string>
+    <string name="label_district">జిల్లా</string>
+    <string name="label_village">గ్రామం</string>
+    <string name="label_primary_crop">ప్రాథమిక పంట</string>
+    <string name="btn_create_account">ఖాతా సృష్టించు</string>
+    <string name="error_passwords_mismatch">పాస్‌వర్డ్‌లు సరిపోలలేదు</string>
+    <string name="error_field_required">ఈ ఫీల్డ్ అవసరం</string>
+
+    <string name="nav_home">హోమ్</string>
+    <string name="nav_seeds">విత్తనాలు</string>
+    <string name="nav_crop_health">పంట ఆరోగ్యం</string>
+    <string name="nav_notifications">నోటిఫికేషన్లు</string>
+    <string name="nav_profile">ప్రొఫైల్</string>
+
+    <string name="greeting_morning">శుభోదయం, %1$s</string>
+    <string name="greeting_afternoon">శుభ మధ్యాహ్నం, %1$s</string>
+    <string name="greeting_evening">శుభ సాయంత్రం, %1$s</string>
+    <string name="weather_title">వాతావరణం</string>
+    <string name="demo_weather_label">డెమో వాతావరణ డేటా</string>
+    <string name="find_right_seed">🌽 సరైన మొక్కజొన్న విత్తనాన్ని కనుగొనండి</string>
+    <string name="btn_start_recommendation">సిఫార్సు ప్రారంభించు</string>
+    <string name="my_crop_status">నా మొక్కజొన్న పంట</string>
+
+    <string name="crop_maize">మొక్కజొన్న</string>
+    <string name="crop_soybean">సోయాబీన్</string>
+    <string name="crop_cotton">పత్తి</string>
+    <string name="status_available">అందుబాటులో ఉంది</string>
+    <string name="status_coming_soon">త్వరలో వస్తుంది</string>
+
+    <string name="seed_recommendation">విత్తన సిఫార్సు</string>
+    <string name="seed_recommendation_desc">మీ పొలం పరిస్థితులకు అనుకూలమైన మొక్కజొన్న రకాన్ని కనుగొనండి.</string>
+    <string name="btn_start_maize">మొక్కజొన్న సిఫార్సు ప్రారంభించు</string>
+    <string name="btn_start_soybean">సోయాబీన్ సిఫార్సు ప్రారంభించు</string>
+    <string name="btn_start_cotton">పత్తి సిఫార్సు ప్రారంభించు</string>
+
+    <string name="where_is_farm">మీ పొలం ఎక్కడ ఉంది?</string>
+    <string name="when_grow_maize">మొక్కజొన్న ఎప్పుడు పండించాలని ప్లాన్ చేస్తున్నారు?</string>
+    <string name="when_grow_soybean">సోయాబీన్ ఎప్పుడు పండించాలని ప్లాన్ చేస్తున్నారు?</string>
+    <string name="when_grow_cotton">పత్తి ఎప్పుడు పండించాలని ప్లాన్ చేస్తున్నారు?</string>
+    <string name="what_soil_type">మీ నేల రకం ఏమిటి?</string>
+    <string name="how_much_water">నీటి లభ్యత ఎంత?</string>
+    <string name="what_problems">మీ ప్రాంతంలో సాధారణ సమస్యలు ఏమిటి?</string>
+    <string name="btn_find_seeds">🔍 అనుకూల విత్తనాలను కనుగొనండి</string>
+
+    <string name="results_title">మొక్కజొన్న విత్తన సిఫార్సులు</string>
+    <string name="results_subtitle">మీ పొలం పరిస్థితుల ఆధారంగా</string>
+    <string name="recommended_varieties">సిఫార్సు చేసిన రకాలు</string>
+    <string name="btn_view_details">వివరాలు చూడండి</string>
+
+    <string name="crop_calendar">పంట క్యాలెండర్</string>
+    <string name="crop_advisory">పంట సలహా</string>
+    <string name="crop_health">పంట ఆరోగ్యం</string>
+    <string name="notifications_title">నోటిఫికేషన్లు</string>
+    <string name="profile_title">రైతు ప్రొఫైల్</string>
+    <string name="settings_title">సెట్టింగ్‌లు</string>
+    <string name="about_title">ఫార్మర్-అవేర్ గురించి</string>
+    <string name="btn_logout">లాగ్అవుట్</string>
+    <string name="how_it_works">ఫార్మర్-అవేర్ ఎలా పని చేస్తుంది?</string>
+
+    <string name="soil_red">ఎర్ర నేల</string>
+    <string name="soil_black">నల్ల నేల</string>
+    <string name="soil_alluvial">అల్లూవియల్ నేల</string>
+    <string name="soil_sandy">ఇసుక నేల</string>
+    <string name="soil_loamy">లోమీ నేల</string>
+    <string name="soil_other">ఇతర</string>
+
+    <string name="water_rainfed">వర్షాధారం</string>
+    <string name="water_limited">పరిమిత నీటిపారుదల</string>
+    <string name="water_assured">నిర్ధారిత నీటిపారుదల</string>
+    <string name="water_waterlogging">నీటి నిల్వ సమస్య</string>
+
+    <string name="season_kharif">🌧 ఖరీఫ్</string>
+    <string name="season_rabi">❄ రబీ</string>
+    <string name="season_spring">🌱 వసంతం</string>
+
+    <string name="basic_information">ప్రాథమిక సమాచారం</string>
+    <string name="advantages_title">ప్రయోజనాలు</string>
+    <string name="trade_offs_title">పరిమితులు</string>
+    <string name="evidence_title">వ్యవసాయ ఆధారాలు / మూలాలు</string>
+
+    <string name="error_network">నెట్‌వర్క్ అందుబాటులో లేదు. దయచేసి మీ కనెక్షన్ తనిఖీ చేయండి.</string>
+    <string name="error_no_recommendations">అందుబాటులో ఉన్న వ్యవసాయ ఆధారాలను ఉపయోగించి అనుకూలమైన రకం కనుగొనబడలేదు.</string>
+
+    <string name="disclaimer_evidence">అందుబాటులో ఉన్న వ్యవసాయ ఆధారాల ఆధారంగా అనుకూలం.</string>
+    <string name="disclaimer_expert">అదనపు నిపుణుల/స్థానిక వ్యవసాయ సలహా అవసరం కావచ్చు.</string>
+</resources>

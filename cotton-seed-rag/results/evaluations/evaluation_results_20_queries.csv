@@ -1,0 +1,21 @@
+query_id,state,season,irrigation,max_maturity,candidates_found,top_recommendations,model_used,latency_sec,grounded,pipeline_success
+Q01,Andhra Pradesh,Kharif,rainfed,165,32,MCU 8; NCS 222; NH 1901 Bt; MCU 7; Prabhat,gemini-3-flash-preview,13.22,True,True
+Q02,Telangana,Kharif,rainfed,165,32,MCU 8; Bio 444; NCS 222; NH 1901 Bt; Prabhat,gemini-3-flash-preview,31.3,True,True
+Q03,Karnataka,Kharif,rainfed,170,41,MCU 8; NH 1901 Bt; MCU 7; RSVD 150; Suraj,gemini-3-flash-preview,10.52,True,True
+Q04,Tamil Nadu,Kharif,irrigated,175,55,MCU 3; Bheem; MCU 9; Bio 644; JKH 1,gemini-3-flash-preview,11.57,True,True
+Q05,Andhra Pradesh,Kharif,irrigated,170,45,MCU 3; Bheem; Bio 644; NH 677; US 51,gemini-3-flash-preview,14.65,True,True
+Q06,Telangana,Kharif,rainfed,160,20,MCU 7; NH 1901 Bt; NCS 222; ICAR_CICR_Cotton_Variety_253; KDCH 700,gemini-3-flash-preview,11.98,True,True
+Q07,Maharashtra,Kharif,rainfed,165,26,MCU 5; Sujata; RCH 650; ICAR_CICR_Cotton_Variety_233; CNA 397,gemini-3-flash-preview,12.9,True,True
+Q08,Gujarat,Kharif,irrigated,170,36,Ankur 3100; RCH 530; H 1098; SP 7000; TVH 007,gemini-3-flash-preview,12.08,True,True
+Q09,Madhya Pradesh,Kharif,rainfed,165,26,MCU 5; Sujata; Cotton_Line_Ext_0; ICAR_CICR_Cotton_Variety_233; RCH 650,gemini-3-flash-preview,15.36,True,True
+Q10,Maharashtra,Kharif,rainfed,160,16,Tulasi 111; RCH 650; ICAR_CICR_Cotton_Variety_233; Sujata; NCS 145,gemini-3-flash-preview,11.98,True,True
+Q11,Gujarat,Kharif,protective irrigated,175,73,NCS 207; Surabhi; Virnar; Nandyal Cotton 28; Achiever,gemini-3-flash-preview,15.55,True,True
+Q12,Madhya Pradesh,Kharif,irrigated,170,36,Ankur 3100; RCH 530; H 1098; SP 7000; TVH 007,gemini-3-flash-preview,10.2,True,True
+Q13,Punjab,Kharif,irrigated,165,28,US 333; CICR 23 Bt; F 2383; NH 1902 Bt; Srinandi,gemini-3-flash-preview,11.4,True,True
+Q14,Haryana,Kharif,irrigated,170,46,CSH 39 R; F 2383; CICR 23 Bt; NH 1902 Bt; JLA 1207,gemini-3-flash-preview,13.9,True,True
+Q15,Rajasthan,Kharif,irrigated,165,28,US 333; F 2383; CICR 23 Bt; NH 1902 Bt; Srinandi,gemini-3-flash-preview,9.93,True,True
+Q16,Punjab,Kharif,irrigated,160,15,US 333; CICR 23 Bt; Srinandi; Phule 388; Gaorani 6,gemini-3-flash-preview,11.1,True,True
+Q17,Haryana,Kharif,rainfed,170,39,Nandyal Cotton 25; H 1236; Ankur 3028; G Cot 16; PBD 88,gemini-3.1-flash-lite-preview,4.3,True,True
+Q18,Rajasthan,Kharif,rainfed,165,25,ICAR_CICR_Cotton_Variety_242; NCS 277; ICAR_CICR_Cotton_Variety_258; SP 1010; Bio 333,gemini-3-flash-preview,15.16,True,True
+Q19,Southern Zone,Kharif,rainfed,165,32,MCU 7; Prabhat; Bio 444; NCS 222,gemini-3.1-flash-lite-preview,4.2,True,True
+Q20,Central Zone,Kharif,irrigated,170,36,H 777; Surabhi; F 414; NCS 145; CICR BT COTTON 55,gemini-3.1-flash-lite-preview,4.46,True,True

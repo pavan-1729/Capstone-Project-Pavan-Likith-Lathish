@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_lg">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/what_soil_type" android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_title" android:textStyle="bold" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/card_red" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing_sm" android:layout_weight="1"
+                android:background="@drawable/bg_option_card" android:gravity="center"
+                android:orientation="vertical" android:padding="@dimen/spacing_md">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🟤" android:textSize="28sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xs" android:text="@string/soil_red"
+                    android:textColor="@color/text_primary" android:textSize="@dimen/text_body" android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/card_black" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:background="@drawable/bg_option_card" android:gravity="center"
+                android:orientation="vertical" android:padding="@dimen/spacing_md">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⬛" android:textSize="28sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xs" android:text="@string/soil_black"
+                    android:textColor="@color/text_primary" android:textSize="@dimen/text_body" android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_sm" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/card_alluvial" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing_sm" android:layout_weight="1"
+                android:background="@drawable/bg_option_card" android:gravity="center"
+                android:orientation="vertical" android:padding="@dimen/spacing_md">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏖️" android:textSize="28sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xs" android:text="@string/soil_alluvial"
+                    android:textColor="@color/text_primary" android:textSize="@dimen/text_body" android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/card_sandy" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:background="@drawable/bg_option_card" android:gravity="center"
+                android:orientation="vertical" android:padding="@dimen/spacing_md">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏜️" android:textSize="28sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xs" android:text="@string/soil_sandy"
+                    android:textColor="@color/text_primary" android:textSize="@dimen/text_body" android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_sm" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/card_loamy" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing_sm" android:layout_weight="1"
+                android:background="@drawable/bg_option_card" android:gravity="center"
+                android:orientation="vertical" android:padding="@dimen/spacing_md">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🌾" android:textSize="28sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xs" android:text="@string/soil_loamy"
+                    android:textColor="@color/text_primary" android:textSize="@dimen/text_body" android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/card_other" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:background="@drawable/bg_option_card" android:gravity="center"
+                android:orientation="vertical" android:padding="@dimen/spacing_md">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="❓" android:textSize="28sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xs" android:text="@string/soil_other"
+                    android:textColor="@color/text_primary" android:textSize="@dimen/text_body" android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

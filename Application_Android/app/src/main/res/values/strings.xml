@@ -1,0 +1,460 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Farmer-Aware</string>
+    <string name="demo_mode_label">DEMO MODE</string>
+    <string name="demo_data_label">Demo data</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_retry">Retry</string>
+    <string name="not_available">Not available</string>
+    <string name="loading">Loading…</string>
+    <string name="ok">OK</string>
+
+    <!-- Splash -->
+    <string name="splash_icon">🌱</string>
+    <string name="splash_title">Farmer-Aware</string>
+    <string name="splash_subtitle">Farmer-Aware Climate-Adaptive Seed Recommendation</string>
+    <string name="splash_research">Using Retrieval-Augmented Agricultural Knowledge</string>
+
+    <!-- Language Selection -->
+    <string name="choose_language">Choose your language</string>
+    <string name="lang_english">English</string>
+    <string name="lang_telugu">తెలుగు</string>
+    <string name="lang_tamil">தமிழ்</string>
+    <string name="lang_hindi">हिन्दी</string>
+
+    <!-- Login -->
+    <string name="login_title">Welcome Back</string>
+    <string name="login_subtitle">Sign in to your account</string>
+    <string name="hint_mobile_email">Mobile Number / Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="create_account">Create Account</string>
+    <string name="continue_as_demo">Continue as Demo Farmer</string>
+    <string name="login_error_invalid">Invalid mobile/email or password</string>
+    <string name="login_success">Login successful</string>
+    <string name="or_divider">OR</string>
+
+    <!-- Registration -->
+    <string name="register_title">Create Account</string>
+    <string name="register_subtitle">Join Farmer-Aware</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="farmer_information">Farmer Information</string>
+    <string name="label_state">State</string>
+    <string name="label_district">District</string>
+    <string name="label_village">Village</string>
+    <string name="label_preferred_language">Preferred Language</string>
+    <string name="label_primary_crop">Primary Crop</string>
+    <string name="btn_create_account">Create Account</string>
+    <string name="error_passwords_mismatch">Passwords do not match</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="registration_success">Account created successfully</string>
+    <string name="already_have_account">Already have an account? Login</string>
+
+    <!-- Forgot Password -->
+    <string name="forgot_password_title">Reset Password</string>
+    <string name="forgot_password_subtitle">Enter your mobile or email to receive OTP</string>
+    <string name="btn_send_otp">Send OTP</string>
+    <string name="hint_enter_otp">Enter OTP</string>
+    <string name="btn_verify">Verify</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_confirm_new_password">Confirm New Password</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="otp_sent_success">OTP sent successfully</string>
+    <string name="otp_verified">OTP verified</string>
+    <string name="password_reset_success">Password reset successfully</string>
+    <string name="demo_otp_hint">Demo OTP: 123456</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_seeds">Seeds</string>
+    <string name="nav_crop_health">Crop Health</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Home -->
+    <string name="greeting_morning">Good morning, %1$s</string>
+    <string name="greeting_afternoon">Good afternoon, %1$s</string>
+    <string name="greeting_evening">Good evening, %1$s</string>
+    <string name="weather_title">Weather</string>
+    <string name="demo_weather_label">Demo weather data</string>
+    <string name="temperature_format">%1$d°C</string>
+    <string name="humidity_format">Humidity: %1$d%%</string>
+    <string name="rain_probability_format">Rain probability: %1$d%%</string>
+    <string name="wind_speed_format">Wind: %1$d km/h</string>
+    <string name="find_right_seed">🌽 Find the Right Maize Seed</string>
+    <string name="btn_start_recommendation">Start Recommendation</string>
+    <string name="my_crop_status">My Maize Crop</string>
+    <string name="sowing_date_label">Sowing Date</string>
+    <string name="current_stage_label">Current Stage</string>
+    <string name="next_activity_label">Next Activity</string>
+    <string name="btn_view_crop_plan">View Crop Plan</string>
+    <string name="location_format">📍 %1$s, %2$s</string>
+
+    <!-- Crops -->
+    <string name="crop_maize">Maize</string>
+    <string name="crop_soybean">Soybean</string>
+    <string name="crop_cotton">Cotton</string>
+    <string name="status_available">Available</string>
+    <string name="status_coming_soon">Coming Soon</string>
+
+    <!-- Seed Advisor -->
+    <string name="seed_recommendation">Seed Recommendation</string>
+    <string name="seed_recommendation_desc">Find maize, soybean, or cotton varieties suitable for your farm conditions.</string>
+    <string name="btn_start_maize">Start Maize Recommendation</string>
+    <string name="btn_start_soybean">Start Soybean Recommendation</string>
+    <string name="btn_start_cotton">Start Cotton Recommendation</string>
+    <string name="select_crop">Select a crop to get recommendations</string>
+
+    <!-- Wizard -->
+    <string name="step_format">Step %1$d of %2$d</string>
+    <string name="wizard_location_title">Location</string>
+    <string name="wizard_season_title">Season</string>
+    <string name="wizard_soil_title">Soil</string>
+    <string name="wizard_water_title">Water</string>
+    <string name="wizard_climate_title">Climate Risks</string>
+    <string name="wizard_requirements_title">Crop Requirements</string>
+    <string name="where_is_farm">Where is your farm located?</string>
+    <string name="when_grow_maize">When are you planning to grow maize?</string>
+    <string name="when_grow_soybean">When are you planning to grow soybean?</string>
+    <string name="when_grow_cotton">When are you planning to grow cotton?</string>
+    <string name="what_soil_type">What type of soil do you have?</string>
+    <string name="how_much_water">How much water is available?</string>
+    <string name="what_problems">What problems are common in your area?</string>
+    <string name="describe_problem">Describe your main problem</string>
+    <string name="hint_describe_problem">e.g., My field receives strong winds and heavy rain before harvest.</string>
+
+    <!-- Location -->
+    <string name="select_state">Select State</string>
+    <string name="select_district">Select District</string>
+    <string name="hint_village">Enter village name</string>
+
+    <!-- Season -->
+    <string name="season_kharif">🌧 Kharif</string>
+    <string name="season_rabi">❄ Rabi</string>
+    <string name="season_spring">🌱 Spring</string>
+    <string name="season_kharif_desc">June – October (monsoon season)</string>
+    <string name="season_rabi_desc">November – March (winter season)</string>
+    <string name="season_spring_desc">March – June (spring season)</string>
+
+    <!-- Soil -->
+    <string name="soil_red">Red Soil</string>
+    <string name="soil_black">Black Soil</string>
+    <string name="soil_alluvial">Alluvial Soil</string>
+    <string name="soil_sandy">Sandy Soil</string>
+    <string name="soil_loamy">Loamy Soil</string>
+    <string name="soil_other">Other</string>
+    <string name="optional_soil_details">Optional Soil Details</string>
+    <string name="soil_ph">Soil pH</string>
+    <string name="nitrogen">Nitrogen (kg/ha)</string>
+    <string name="phosphorus">Phosphorus (kg/ha)</string>
+    <string name="potassium">Potassium (kg/ha)</string>
+    <string name="i_dont_know">I don\'t know</string>
+
+    <!-- Water -->
+    <string name="water_rainfed">Rainfed</string>
+    <string name="water_rainfed_desc">Depends entirely on rainfall</string>
+    <string name="water_limited">Limited Irrigation</string>
+    <string name="water_limited_desc">Occasional irrigation available</string>
+    <string name="water_assured">Assured Irrigation</string>
+    <string name="water_assured_desc">Reliable water supply available</string>
+    <string name="water_waterlogging">Waterlogging Problem</string>
+    <string name="water_waterlogging_desc">Field prone to waterlogging</string>
+
+    <!-- Climate Risks -->
+    <string name="risk_strong_wind">Strong winds before harvest</string>
+    <string name="risk_heavy_rain">Heavy rainfall</string>
+    <string name="risk_waterlogging">Waterlogging</string>
+    <string name="risk_drought">Drought</string>
+    <string name="risk_high_temp">High temperature</string>
+    <string name="risk_cold">Cold conditions</string>
+    <string name="risk_pest">Pest pressure</string>
+    <string name="risk_disease">Disease pressure</string>
+    <string name="risk_none">None</string>
+
+    <!-- Requirements -->
+    <string name="max_maturity_days">Maximum maturity (days)</string>
+    <string name="label_purpose">Purpose</string>
+    <string name="purpose_grain">Grain</string>
+    <string name="purpose_feed">Feed</string>
+    <string name="purpose_starch">Starch</string>
+    <string name="purpose_other">Other</string>
+    <string name="label_priority">Priority</string>
+    <string name="priority_yield">Highest Yield</string>
+    <string name="priority_early_harvest">Early Harvest</string>
+    <string name="priority_stress_tolerance">Stress Tolerance</string>
+    <string name="priority_balanced">Balanced</string>
+    <string name="btn_find_seeds">🔍 Find Suitable Seeds</string>
+
+    <!-- Loading -->
+    <string name="loading_analyzing">Analyzing your farm conditions…</string>
+    <string name="loading_farm_conditions">Farm Conditions</string>
+    <string name="loading_agricultural_knowledge">Agricultural Knowledge</string>
+    <string name="loading_variety_matching">Maize Variety Matching</string>
+    <string name="loading_recommendation">Recommendation</string>
+    <string name="demo_recommendation_engine">Demo recommendation engine</string>
+    <string name="loading_real_rag">Retrieving evidence from maize knowledge base…</string>
+
+    <!-- Results -->
+    <string name="results_title">Maize Seed Recommendations</string>
+    <string name="results_subtitle">Based on your farm conditions</string>
+    <string name="recommended_varieties">Recommended Varieties</string>
+    <string name="suitability_high">HIGH</string>
+    <string name="suitability_moderate">MODERATE</string>
+    <string name="reason_season_match">✓ Matches selected season</string>
+    <string name="reason_maturity_match">✓ Meets maturity requirement</string>
+    <string name="reason_regional_evidence">✓ Relevant regional evidence available</string>
+    <string name="reason_stress_match">✓ Relevant documented stress characteristics</string>
+    <string name="btn_view_details">View Details</string>
+    <string name="your_conditions">Your Conditions</string>
+    <string name="label_location">Location</string>
+    <string name="label_season">Season</string>
+    <string name="label_soil">Soil</string>
+    <string name="label_water">Water</string>
+    <string name="label_climate_risks">Climate Risks</string>
+    <string name="label_maturity">Maturity</string>
+    <string name="maturity_days_format">≤%1$d days</string>
+
+    <!-- Variety Detail -->
+    <string name="basic_information">Basic Information</string>
+    <string name="cultivation_info">Cultivation</string>
+    <string name="yield_info">Yield</string>
+    <string name="plant_characteristics">Plant Characteristics</string>
+    <string name="stress_tolerance">Stress Tolerance</string>
+    <string name="pest_resistance">Pest Resistance</string>
+    <string name="disease_resistance">Disease Resistance</string>
+    <string name="grain_characteristics">Grain Characteristics</string>
+    <string name="special_traits_title">Special Traits</string>
+    <string name="variety_name_label">Variety Name</string>
+    <string name="category_label">Category</string>
+    <string name="type_label">Type</string>
+    <string name="developer_label">Developer / Company</string>
+    <string name="release_year_label">Release Year</string>
+    <string name="season_label">Season</string>
+    <string name="maturity_label">Maturity</string>
+    <string name="maturity_range_format">%1$d – %2$d days</string>
+    <string name="recommended_regions_label">Recommended Regions</string>
+    <string name="agro_climatic_zone_label">Agro-Climatic Zone</string>
+    <string name="irrigation_condition_label">Irrigation Condition</string>
+    <string name="yield_value_label">Yield</string>
+    <string name="yield_range_label">Yield Range</string>
+    <string name="yield_range_format">%1$.1f – %2$.1f q/ha</string>
+    <string name="plant_height_label">Plant Height</string>
+    <string name="ear_height_label">Ear Height</string>
+    <string name="lodging_resistance_label">Lodging Resistance</string>
+    <string name="leaf_orientation_label">Leaf Orientation</string>
+    <string name="stay_green_label">Stay Green</string>
+    <string name="drought_tolerance_label">Drought Tolerance</string>
+    <string name="waterlogging_tolerance_label">Waterlogging Tolerance</string>
+    <string name="heat_tolerance_label">Heat Tolerance</string>
+    <string name="cold_stress_label">Cold Stress Tolerance</string>
+    <string name="fall_armyworm_label">Fall Armyworm</string>
+    <string name="stem_borer_label">Stem Borer</string>
+    <string name="pink_stem_borer_label">Pink Stem Borer</string>
+    <string name="turcicum_leaf_blight_label">Turcicum Leaf Blight</string>
+    <string name="maydis_leaf_blight_label">Maydis Leaf Blight</string>
+    <string name="curvularia_leaf_spot_label">Curvularia Leaf Spot</string>
+    <string name="banded_leaf_sheath_blight_label">Banded Leaf Sheath Blight</string>
+    <string name="charcoal_rot_label">Charcoal Rot</string>
+    <string name="fusarium_stalk_rot_label">Fusarium Stalk Rot</string>
+    <string name="downy_mildew_label">Downy Mildew</string>
+    <string name="grain_type_label">Grain Type</string>
+    <string name="grain_colour_label">Grain Colour</string>
+    <string name="not_available_source">Not available in current agricultural source</string>
+
+    <!-- Explanation -->
+    <string name="why_recommended">Why was this variety recommended?</string>
+    <string name="demo_reasoning_label">Demonstration reasoning</string>
+    <string name="farmer_conditions_label">Farmer Conditions</string>
+    <string name="retrieved_evidence_label">Retrieved Agricultural Evidence</string>
+    <string name="matching_characteristics_label">Matching Characteristics</string>
+    <string name="recommendation_output_label">Recommendation</string>
+
+    <!-- Advantages & Trade-offs -->
+    <string name="advantages_title">Advantages</string>
+    <string name="trade_offs_title">Trade-offs / Limitations</string>
+
+    <!-- Evidence -->
+    <string name="evidence_title">Agricultural Evidence / Sources</string>
+    <string name="trust_recommendation">Why should you trust this recommendation?</string>
+    <string name="source_org_label">Source Organization</string>
+    <string name="source_doc_label">Source Document</string>
+    <string name="source_type_label">Source Type</string>
+    <string name="pdf_page_label">PDF Page</string>
+    <string name="printed_page_label">Printed Page</string>
+    <string name="source_text_label">Source Text</string>
+    <string name="btn_view_source">View Source</string>
+    <string name="evidence_based">Recommendation is based on documented agricultural information.</string>
+    <string name="demo_source">Source data from the project dataset.</string>
+
+    <!-- How It Works / RAG -->
+    <string name="how_it_works">How does Farmer-Aware work?</string>
+    <string name="rag_step_farmer">👨‍🌾 Farmer Input</string>
+    <string name="rag_step_extraction">📋 Farm Condition Extraction</string>
+    <string name="rag_step_filtering">🔎 Metadata Filtering</string>
+    <string name="rag_step_similarity">🧠 Vector Similarity Search</string>
+    <string name="rag_step_evidence">📚 Agricultural Evidence</string>
+    <string name="rag_step_llm">🤖 LLM Reasoning</string>
+    <string name="rag_step_recommendation">🌱 Seed Recommendation</string>
+    <string name="rag_explanation">The system searches agricultural knowledge relevant to your farm conditions and uses the retrieved evidence to generate a recommendation.</string>
+    <string name="not_chatbot">This is not a generic chatbot. It retrieves and reasons over documented agricultural knowledge.</string>
+
+    <!-- Crop Calendar -->
+    <string name="crop_calendar">Crop Calendar</string>
+    <string name="demo_calendar_label">Demo crop calendar</string>
+    <string name="stage_sowing">🌱 Sowing</string>
+    <string name="stage_early_growth">🌿 Early Growth</string>
+    <string name="stage_management">🧪 Crop Management</string>
+    <string name="stage_vegetative">🌿 Vegetative Stage</string>
+    <string name="stage_tasseling">🌽 Tasseling</string>
+    <string name="stage_grain_dev">🌽 Grain Development</string>
+    <string name="stage_harvest">🚜 Harvest</string>
+    <string name="day_format">Day %1$d</string>
+
+    <!-- Crop Advisory -->
+    <string name="crop_advisory">Crop Advisory</string>
+    <string name="advisory_monitoring">🌱 Crop Monitoring</string>
+    <string name="advisory_irrigation">💧 Irrigation</string>
+    <string name="advisory_fertilizer">🧪 Fertilizer</string>
+    <string name="advisory_pest">🐛 Pest Monitoring</string>
+    <string name="advisory_disease">🌿 Disease Monitoring</string>
+    <string name="advisory_harvest">🚜 Harvest Preparation</string>
+    <string name="advisory_disclaimer">Do not apply unverified fertilizer or pesticide dosage. Consult local agricultural experts.</string>
+
+    <!-- Crop Health -->
+    <string name="crop_health">Crop Health</string>
+    <string name="describe_symptoms">Describe Symptoms</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="hint_symptoms">What symptoms are you seeing? e.g., Brown spots on the leaves.</string>
+    <string name="btn_analyze">Analyze</string>
+    <string name="ai_diagnosis_developing">AI disease diagnosis is under development.</string>
+    <string name="disease_knowledge">Disease Knowledge</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">Notifications</string>
+    <string name="category_all">All</string>
+    <string name="category_crop">Crop</string>
+    <string name="category_weather">Weather</string>
+    <string name="category_disease">Disease</string>
+    <string name="category_fertilizer">Fertilizer</string>
+    <string name="category_system">System</string>
+    <string name="demo_notifications">Demo notifications</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Farmer Profile</string>
+    <string name="name_label">Name</string>
+    <string name="mobile_label">Mobile</string>
+    <string name="email_label">Email</string>
+    <string name="farm_info">Farm Information</string>
+    <string name="primary_crop_label">Primary Crop</string>
+    <string name="farm_size_label">Farm Size</string>
+    <string name="btn_edit_profile">Edit Profile</string>
+    <string name="btn_change_language">Change Language</string>
+    <string name="btn_logout">Logout</string>
+    <string name="logout_confirm">Are you sure you want to logout?</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_location">Location</string>
+    <string name="settings_units">Units</string>
+    <string name="settings_privacy">Privacy</string>
+    <string name="settings_about">About</string>
+    <string name="settings_demo_mode">Demo Mode</string>
+    <string name="weather_alerts">Weather alerts</string>
+    <string name="crop_reminders">Crop reminders</string>
+    <string name="disease_alerts">Disease alerts</string>
+    <string name="advisories_label">Advisories</string>
+
+    <!-- About -->
+    <string name="about_title">About Farmer-Aware</string>
+    <string name="project_full_title">Farmer-Aware Climate-Adaptive Seed Recommendation Using Retrieval-Augmented Agricultural Knowledge</string>
+    <string name="project_objective">To help farmers make context-aware seed selection decisions by retrieving and reasoning over documented agricultural knowledge relevant to their farm conditions.</string>
+    <string name="current_impl">Current Implementation</string>
+    <string name="future_impl">Future Implementation</string>
+    <string name="technology_stack">Technology Stack</string>
+    <string name="maize_rag">🌽 Maize Seed Recommendation RAG</string>
+    <string name="soybean_rag">🫘 Soybean RAG</string>
+    <string name="cotton_rag">🌿 Cotton RAG</string>
+
+    <!-- Capstone -->
+    <string name="how_system_works">How the System Works</string>
+    <string name="capstone_problem_title">PROBLEM</string>
+    <string name="capstone_problem">Farmers may not know which seed variety is suitable for their specific conditions.</string>
+    <string name="capstone_solution_title">SOLUTION</string>
+    <string name="capstone_solution">Context-aware seed recommendation.</string>
+    <string name="capstone_knowledge_title">KNOWLEDGE</string>
+    <string name="capstone_knowledge">Agricultural documents and maize variety information.</string>
+    <string name="capstone_rag_title">RAG</string>
+    <string name="capstone_rag">Retrieve relevant evidence.</string>
+    <string name="capstone_reasoning_title">REASONING</string>
+    <string name="capstone_reasoning">Match evidence against farmer conditions.</string>
+    <string name="capstone_output_title">OUTPUT</string>
+    <string name="capstone_output">Transparent seed recommendation with evidence and trade-offs.</string>
+
+    <!-- Responsible Advisory -->
+    <string name="disclaimer_evidence">Suitable based on available agricultural evidence.</string>
+    <string name="disclaimer_conditions">Recommended based on the provided farm conditions.</string>
+    <string name="disclaimer_expert">Additional expert/local agricultural advice may be required.</string>
+    <string name="insufficient_evidence">Insufficient documented evidence to provide a reliable recommendation.</string>
+
+    <!-- Error States -->
+    <string name="error_network">Network unavailable. Please check your connection.</string>
+    <string name="error_server">Server unavailable. Please try again later.</string>
+    <string name="error_no_recommendations">No suitable variety was found using the available agricultural evidence.</string>
+    <string name="error_incomplete">Please fill in all required information.</string>
+    <string name="error_source_unavailable">Source information is not available.</string>
+    <string name="error_invalid_input">Please check your input and try again.</string>
+    <string name="error_location_unavailable">Location information is not available.</string>
+
+    <!-- States -->
+    <string name="state_andhra_pradesh">Andhra Pradesh</string>
+    <string name="state_telangana">Telangana</string>
+    <string name="state_karnataka">Karnataka</string>
+    <string name="state_tamil_nadu">Tamil Nadu</string>
+    <string name="state_maharashtra">Maharashtra</string>
+    <string name="state_madhya_pradesh">Madhya Pradesh</string>
+    <string name="state_rajasthan">Rajasthan</string>
+    <string name="state_bihar">Bihar</string>
+    <string name="state_uttar_pradesh">Uttar Pradesh</string>
+    <string name="state_gujarat">Gujarat</string>
+
+    <!-- Demo Data -->
+    <string name="demo_farmer_name">Demo Farmer</string>
+    <string name="demo_sowing_date">15 July 2026</string>
+    <string name="demo_current_stage">Vegetative Growth</string>
+    <string name="demo_next_activity">Crop monitoring</string>
+
+    <!-- Additional UI Strings -->
+    <string name="yield_label">Yield</string>
+    <string name="loading_title">Finding Suitable Varieties</string>
+    <string name="loading_disclaimer">Recommendations are based on available agricultural evidence. Consult local experts for additional advice.</string>
+    <string name="results_count">%1$d varieties found</string>
+    <string name="variety_details">Variety Details</string>
+    <string name="crop_health_subtitle">Maize disease knowledge base</string>
+    <string name="label_email">Email</string>
+    <string name="change_language">Change Language</string>
+    <string name="app_full_title">Farmer-Aware Climate-Adaptive Seed Recommendation\nUsing Retrieval-Augmented Agricultural Knowledge</string>
+    <string name="how_step_1_title">1. Tell us about your farm</string>
+    <string name="how_step_1_desc">Share your location, soil type, water availability, season, and any climate risks you face.</string>
+    <string name="how_step_2_title">2. We search agricultural knowledge</string>
+    <string name="how_step_2_desc">The system searches documented agricultural sources — ICAR bulletins, variety release documents, and research papers — to find evidence relevant to your conditions.</string>
+    <string name="how_step_3_title">3. Get evidence-based recommendations</string>
+    <string name="how_step_3_desc">Receive maize variety recommendations with transparency: which varieties match, why, and the source of each piece of evidence.</string>
+    <string name="max_maturity_label">Maximum acceptable crop maturity</string>
+    <string name="maturity_range_hint">Range: 60 to 140 days</string>
+    <string name="ready_to_find">Ready to find suitable seeds?</string>
+    <string name="ready_to_find_desc">Press \"Find Suitable Seeds\" below. The system will search agricultural knowledge matching your conditions and recommend suitable maize varieties.</string>
+    <string name="days">days</string>
+    <string name="coming_soon_text">Coming Soon</string>
+</resources>

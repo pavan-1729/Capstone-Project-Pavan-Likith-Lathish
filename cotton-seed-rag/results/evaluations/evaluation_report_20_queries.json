@@ -1,0 +1,1382 @@
+{
+  "evaluation_title": "Cotton Seed RAG Pipeline Evaluation",
+  "evaluation_date": "2026-11-22T15:57:12.000454",
+  "number_of_test_queries": 20,
+  "total_documents": 265,
+  "total_retrieved_candidates": 687,
+  "average_candidates_per_query": 34.35,
+  "metadata_evaluation": {
+    "region_matching_accuracy": 1.0,
+    "season_matching_accuracy": 1.0,
+    "maturity_constraint_accuracy": 1.0,
+    "overall_metadata_constraint_accuracy": 1.0
+  },
+  "gemini_evaluation": {
+    "gemini_success_rate": 1.0,
+    "valid_structure_rate": 1.0,
+    "candidate_grounding_rate": 1.0,
+    "valid_ranking_rate": 1.0,
+    "maturity_reporting_rate": 1.0,
+    "irrigation_handling_rate": 1.0
+  },
+  "end_to_end": {
+    "pipeline_success_rate": 1.0,
+    "average_execution_time_seconds": 12.29
+  },
+  "query_results": [
+    {
+      "query_id": "Q01",
+      "query": "I am a farmer from Andhra Pradesh. I want to grow cotton during Kharif season under rainfed conditions and I need a variety that matures within 165 days.",
+      "state": "Andhra Pradesh",
+      "season": "Kharif",
+      "irrigation": "rainfed",
+      "max_maturity_days": 165,
+      "retrieved_candidates_count": 32,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 13.22,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_051",
+          "variety_name": "MCU 8",
+          "maturity": "142 - 161 days",
+          "irrigation": "Rainfed",
+          "reason": "MCU 8 is a premier recommendation for the Southern Zone (AP) under rainfed conditions. It offers the highest yield potential (up to 26.6 q/ha) among the rainfed candidates. Agronomically, it is highly resilient, featuring resistance to drought and high resistance to waterlogging, which is critical for the unpredictable Kharif rainfall in Andhra Pradesh."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_202",
+          "variety_name": "NCS 222",
+          "maturity": "143 - 153 days",
+          "irrigation": "Rainfed",
+          "reason": "NCS 222 is an excellent Hirsutum hybrid for rainfed systems, maturing well within the 165-day limit. It provides a high yield of 22.6-26.0 q/ha and is highly resistant to Pink Bollworm and Charcoal Rot. Its sympodial branching habit and drought tolerance make it suitable for the agro-climatic conditions of AP."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_107",
+          "variety_name": "NH 1901 Bt",
+          "maturity": "144 - 159 days",
+          "irrigation": "Rainfed",
+          "reason": "This transgenic hybrid is specifically adapted for the Southern Zone's rainfed Kharif season. It offers stable yields (up to 26.0 q/ha) and is characterized by its high resistance to both drought and waterlogging. It also features a high 'stay green' characteristic, which helps in better nutrient mobilization during the boll-filling stage."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_012",
+          "variety_name": "MCU 7",
+          "maturity": "143 - 153 days",
+          "irrigation": "Rainfed",
+          "reason": "MCU 7 is a highly drought-resistant selection ideal for rainfed areas in Andhra Pradesh. With a maturity range of 143-153 days, it effectively escapes late-season moisture stress. It also boasts high resistance to Curvularia leaf spot and Fusarium stalk rot, ensuring crop health under stress."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_084",
+          "variety_name": "Prabhat",
+          "maturity": "155 - 165 days",
+          "irrigation": "Rainfed",
+          "reason": "Prabhat is a robust non-Bt hybrid that fits the farmer's maximum maturity requirement of 165 days. It is particularly noted for its high resistance to waterlogging and Pink Bollworm, providing a yield potential of up to 25.7 q/ha in rainfed Southern Zone environments."
+        }
+      ],
+      "final_note": "For rainfed Kharif cultivation in Andhra Pradesh, selecting a variety with both drought and waterlogging tolerance is essential due to monsoon variability. MCU 8 and NCS 222 are the top choices for their superior yield and stress resistance profiles. Ensure timely sowing with the onset of the monsoon to maximize the 165-day growing window.",
+      "warnings": [
+        "Monitor for Pink Bollworm regularly, especially in non-Bt varieties like MCU 8 and Prabhat.",
+        "Ensure proper field drainage to prevent moisture stress during heavy rainfall events, despite the varieties' inherent tolerances.",
+        "Maintain recommended plant geometry (spacing) to optimize yield under rainfed conditions."
+      ]
+    },
+    {
+      "query_id": "Q02",
+      "query": "I am from Telangana and want to cultivate cotton during Kharif. I need a variety that matures within 165 days under rainfed conditions.",
+      "state": "Telangana",
+      "season": "Kharif",
+      "irrigation": "rainfed",
+      "max_maturity_days": 165,
+      "retrieved_candidates_count": 32,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 31.3,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_051",
+          "variety_name": "MCU 8",
+          "maturity": "142 - 161 days",
+          "irrigation": "Rainfed",
+          "reason": "Highest yield potential (up to 26.6 q/ha) among rainfed candidates for the Southern Zone. It is highly resistant to waterlogging and Fall Armyworm, making it robust for Telangana's Kharif season. Its maturity fits well within the 165-day limit."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_204",
+          "variety_name": "Bio 444",
+          "maturity": "149 - 160 days",
+          "irrigation": "Rainfed",
+          "reason": "A high-yielding selection (up to 26.8 q/ha) specifically categorized for the Southern Zone (SZ) under rainfed conditions. It features high stay-green characteristics and resistance to waterlogging and Turcicum Leaf Blight."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_202",
+          "variety_name": "NCS 222",
+          "maturity": "143 - 153 days",
+          "irrigation": "Rainfed",
+          "reason": "Offers excellent yield (up to 26.0 q/ha) with a shorter maturity duration, providing a safety buffer for rainfed cultivation. It is highly resistant to Turcicum Leaf Blight and Charcoal Rot."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_107",
+          "variety_name": "NH 1901 Bt",
+          "maturity": "144 - 159 days",
+          "irrigation": "Rainfed",
+          "reason": "A transgenic hybrid recommended for the Southern Zone with high yield potential (up to 26.0 q/ha). It demonstrates superior stress tolerance, being resistant to drought, heat, and waterlogging."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_084",
+          "variety_name": "Prabhat",
+          "maturity": "155 - 165 days",
+          "irrigation": "Rainfed",
+          "reason": "A reliable non-Bt hybrid for the Southern Zone that maximizes the 165-day window. It is highly resistant to lodging and waterlogging, which is critical for heavy rainfall periods during the Kharif season in Telangana."
+        }
+      ],
+      "final_note": "All recommended varieties are officially verified for the Southern Zone (including Telangana) and are specifically suited for rainfed Kharif cultivation within a 165-day maturity window. These varieties offer a balance of high yield and resistance to regional biotic and abiotic stresses.",
+      "warnings": [
+        "Monitor for Pink Bollworm regularly, especially in non-Bt varieties like MCU 8, Bio 444, and NCS 222.",
+        "Ensure field drainage is adequate to prevent root rot during periods of heavy Kharif rainfall.",
+        "Follow recommended sympodial or monopodial spacing based on the specific variety's plant habit to optimize rainfed yields."
+      ]
+    },
+    {
+      "query_id": "Q03",
+      "query": "I am a farmer in Karnataka looking for a Kharif cotton variety with maturity below 170 days under rainfed conditions.",
+      "state": "Karnataka",
+      "season": "Kharif",
+      "irrigation": "rainfed",
+      "max_maturity_days": 170,
+      "retrieved_candidates_count": 41,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 10.52,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_051",
+          "variety_name": "MCU 8",
+          "maturity": "142 - 161 days",
+          "irrigation": "Rainfed",
+          "reason": "MCU 8 is a high-yielding (23.0-26.6 q/ha) Gossypium Arboreum variety perfectly suited for Karnataka's rainfed Kharif season. It features excellent drought resistance and unique high resistance to waterlogging, which is critical for unpredictable monsoon patterns. Its maturity is well within the 170-day limit, and it offers a high ginning outturn of 37%."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_107",
+          "variety_name": "NH 1901 Bt",
+          "maturity": "144 - 159 days",
+          "irrigation": "Rainfed",
+          "reason": "This transgenic hybrid is ideal for farmers seeking Bt technology under rainfed conditions. It demonstrates high resistance to drought, heat, and waterlogging. With a yield potential of up to 26.0 q/ha and a maturity period under 160 days, it provides a robust option for the Southern Zone's agro-climatic challenges."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_012",
+          "variety_name": "MCU 7",
+          "maturity": "143 - 153 days",
+          "irrigation": "Rainfed",
+          "reason": "MCU 7 is a medium-maturity Gossypium Herbaceum variety specifically recommended for the Southern Zone. It is highly drought-resistant and possesses a strong disease resistance profile, including resistance to Charcoal Rot and Fusarium Stalk Rot. Its early maturity (max 153 days) makes it a safe choice for rain-dependent cultivation."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_045",
+          "variety_name": "RSVD 150",
+          "maturity": "154 - 164 days",
+          "irrigation": "Rainfed",
+          "reason": "RSVD 150 is a Gossypium Herbaceum selection that offers stable yields (up to 24.2 q/ha) under rainfed conditions. It is noted for its high resistance to heat and several leaf diseases, making it suitable for the warmer regions of Karnataka. It maintains a maturity profile well below the 170-day threshold."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_021",
+          "variety_name": "Suraj",
+          "maturity": "152 - 164 days",
+          "irrigation": "Rainfed",
+          "reason": "Suraj is a non-Bt hybrid with a high ginning outturn of 38% and superior staple length (32mm). It is tolerant to drought and resistant to waterlogging, providing a balanced risk-management profile for rainfed farmers in the Southern Zone."
+        }
+      ],
+      "final_note": "For rainfed Kharif cotton in Karnataka, selecting varieties with high drought tolerance and a maturity period of 140-160 days is essential to avoid end-of-season moisture stress. The recommended varieties are all verified for the Southern Zone and align with ICAR-CICR standards for rainfed stability.",
+      "warnings": [
+        "Monitor for Pink Bollworm regularly, especially in non-Bt varieties like MCU 8 and Suraj.",
+        "Ensure proper field drainage to prevent root rot during heavy monsoon spells, despite the waterlogging tolerance of some varieties.",
+        "Maintain recommended plant spacing to optimize yield under rainfed nutrient availability."
+      ]
+    },
+    {
+      "query_id": "Q04",
+      "query": "I am from Tamil Nadu and want to grow cotton in Kharif season under irrigated conditions with maturity within 175 days.",
+      "state": "Tamil Nadu",
+      "season": "Kharif",
+      "irrigation": "irrigated",
+      "max_maturity_days": 175,
+      "retrieved_candidates_count": 55,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 11.57,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_049",
+          "variety_name": "MCU 3",
+          "maturity": "156 - 170 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "MCU 3 is a high-yielding Gossypium Arboreum variety (23.5-30.4 q/ha) specifically recommended for the Southern Zone including Tamil Nadu. It features high heat and drought resistance, making it robust for Kharif conditions. It offers a ginning outturn of 37% and a micronaire of 4.1."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_096",
+          "variety_name": "Bheem",
+          "maturity": "154 - 164 days",
+          "irrigation": "Irrigated",
+          "reason": "Bheem is a high-yielding Bt Cotton Hybrid (23.6-30.2 q/ha) with excellent waterlogging tolerance, which is critical for irrigated Kharif seasons. It is resistant to stem borer and pink bollworm, ensuring crop stability in the Southern Zone."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_052",
+          "variety_name": "MCU 9",
+          "maturity": "142 - 154 days",
+          "irrigation": "Irrigated",
+          "reason": "MCU 9 provides a strong yield potential of 23.5-28.8 q/ha with a superior staple length of 30mm. As a selection from PAU Ludhiana recommended for the Southern Zone, it fits well within the 175-day maturity constraint while maintaining high fiber quality (Micronaire 4.4)."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_063",
+          "variety_name": "Bio 644",
+          "maturity": "143 - 160 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "Bio 644 is a high-performing Non-Bt Hybrid (21.0-27.3 q/ha) with a long staple length of 32mm. It is highly resistant to heat, stem borer, and pink bollworm, making it an excellent choice for intensive management in Tamil Nadu."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_056",
+          "variety_name": "JKH 1",
+          "maturity": "147 - 160 days",
+          "irrigation": "Irrigated",
+          "reason": "JKH 1 is a Gossypium Arboreum selection offering high yields (20.9-27.0 q/ha) and a premium staple length of 32mm. It has a high ginning outturn of 39% and is highly drought resistant, providing security against irrigation fluctuations."
+        }
+      ],
+      "final_note": "For the Kharif season in Tamil Nadu, the selected varieties MCU 3 and Bheem offer the highest yield potential while staying well within your 175-day maturity requirement. These varieties are specifically authenticated for the Southern Zone and are compatible with irrigated systems.",
+      "warnings": [
+        "Monitor for Stem Borer in F 846 and MCU 3 as they are susceptible.",
+        "Ensure proper drainage for MCU 9 and JKH 1 as they are susceptible to waterlogging.",
+        "Regularly scout for Pink Bollworm in MCU 3 and MCU 9 to maintain yield quality."
+      ]
+    },
+    {
+      "query_id": "Q05",
+      "query": "I am farming in Andhra Pradesh during Kharif and need an irrigated cotton variety that matures within 170 days.",
+      "state": "Andhra Pradesh",
+      "season": "Kharif",
+      "irrigation": "irrigated",
+      "max_maturity_days": 170,
+      "retrieved_candidates_count": 45,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 14.65,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_049",
+          "variety_name": "MCU 3",
+          "maturity": "156 - 170 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "MCU 3 is the highest-yielding candidate (up to 30.4 q/ha) that fits the farmer's maturity requirement perfectly. It is highly resistant to both drought and heat, making it exceptionally stable for the Southern Zone (AP). It also features resistance to pink bollworm and Turcicum leaf blight."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_096",
+          "variety_name": "Bheem",
+          "maturity": "154 - 164 days",
+          "irrigation": "Irrigated",
+          "reason": "Bheem offers high yield potential (23.6 - 30.2 q/ha) and is specifically suited for irrigated conditions in Andhra Pradesh. It is highly resistant to waterlogging and charcoal rot, with a high 'stay green' characteristic that supports late-season boll development."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_063",
+          "variety_name": "Bio 644",
+          "maturity": "143 - 160 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "Bio 644 is a high-performing non-Bt hybrid with a superior staple length of 32mm and a high ginning outturn of 39%. It is highly resistant to stem borer and pink bollworm, providing excellent pest management alongside high yields (up to 27.3 q/ha)."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_038",
+          "variety_name": "NH 677",
+          "maturity": "146 - 159 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "NH 677 is a transgenic hybrid with a strong yield profile (21.4 - 25.7 q/ha). It is highly resistant to heat and Fusarium stalk rot, and its sympodial branching habit is well-suited for the Southern Zone's agro-climatic conditions."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_148",
+          "variety_name": "US 51",
+          "maturity": "152 - 169 days",
+          "irrigation": "Irrigated",
+          "reason": "US 51 is recommended for its robust pest resistance profile, being highly resistant to fall armyworm, stem borer, and pink bollworm. It fits the maturity window at 152-169 days and provides consistent yields under irrigated conditions."
+        }
+      ],
+      "final_note": "All recommended varieties are officially verified for the Southern Zone (Andhra Pradesh) and fall within the 170-day maturity limit. Selection should be based on local pest pressure and specific fiber quality requirements (e.g., Bio 644 for long staple length).",
+      "warnings": [
+        "Monitor for Fall Armyworm in MCU 3 as it is documented as susceptible.",
+        "Ensure proper drainage for MCU 9 or JKH 1 if selected, as they are susceptible to waterlogging.",
+        "Pink bollworm monitoring is critical for NH 677 and PKV Rajat due to their susceptible response."
+      ]
+    },
+    {
+      "query_id": "Q06",
+      "query": "I am from Telangana looking for an early maturing Kharif cotton variety within 160 days under rainfed farming.",
+      "state": "Telangana",
+      "season": "Kharif",
+      "irrigation": "rainfed",
+      "max_maturity_days": 160,
+      "retrieved_candidates_count": 20,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 11.98,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_012",
+          "variety_name": "MCU 7",
+          "maturity": "143 - 153 days",
+          "irrigation": "Rainfed",
+          "reason": "MCU 7 is an ideal choice for Telangana as it is specifically recommended for rainfed conditions in the Southern Zone. It features high drought resistance and a medium maturity profile well within the 160-day limit. Agronomically, it offers a high ginning outturn of 35% and strong resistance to Curvularia leaf spot, Charcoal rot, and Fusarium stalk rot."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_107",
+          "variety_name": "NH 1901 Bt",
+          "maturity": "144 - 159 days",
+          "irrigation": "Rainfed",
+          "reason": "This transgenic hybrid is highly suited for rainfed Kharif cultivation in the Southern Zone. It provides a robust yield potential (up to 26.0 q/ha) and exhibits excellent stress tolerance, being resistant to drought and highly resistant to waterlogging. It also shows resistance to pink bollworm and various leaf blights."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_202",
+          "variety_name": "NCS 222",
+          "maturity": "143 - 153 days",
+          "irrigation": "Rainfed",
+          "reason": "NCS 222 is a high-yielding non-Bt hybrid (22.6 - 26.0 q/ha) that fits perfectly into the early maturity window. It is documented for rainfed suitability in the Southern Zone and possesses resistance to waterlogging and charcoal rot, making it resilient against the erratic rainfall patterns often seen in Telangana."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_253",
+          "variety_name": "ICAR_CICR_Cotton_Variety_253",
+          "maturity": "143 - 159 days",
+          "irrigation": "Rainfed",
+          "reason": "A Bt Cotton Hybrid with a strong yield profile (up to 28.5 q/ha). It is verified for rainfed conditions in the Southern Zone. Its high resistance to waterlogging and tolerance to drought provide a balanced risk profile for Kharif farmers in Telangana."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_196",
+          "variety_name": "KDCH 700",
+          "maturity": "140 - 151 days",
+          "irrigation": "Rainfed",
+          "reason": "KDCH 700 is one of the earliest maturing varieties in the candidate list, finishing as early as 140 days. As a transgenic hybrid recommended for rainfed Southern Zone regions, it offers high ginning outturn (39%) and excellent drought resistance, which is critical for rainfed farming."
+        }
+      ],
+      "final_note": "For rainfed cotton in Telangana, selecting varieties with high drought tolerance and a maturity period under 160 days is critical to avoid terminal moisture stress. The recommended varieties are all verified for the Southern Zone and rainfed conditions, ensuring they are agronomically compatible with your local environment.",
+      "warnings": [
+        "Monitor for Pink Bollworm regularly, especially in varieties like NH 1901 Bt and NCS 222.",
+        "Ensure adequate field drainage to prevent root rot, even in rainfed conditions.",
+        "Check local seed availability for specific transgenic hybrids as they may require specific refuge crop planting."
+      ]
+    },
+    {
+      "query_id": "Q07",
+      "query": "I am a farmer from Maharashtra. I want to grow cotton during Kharif season under rainfed conditions and I need a variety that matures within 165 days.",
+      "state": "Maharashtra",
+      "season": "Kharif",
+      "irrigation": "rainfed",
+      "max_maturity_days": 165,
+      "retrieved_candidates_count": 26,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 12.9,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_011",
+          "variety_name": "MCU 5",
+          "maturity": "155 - 165 days",
+          "irrigation": "Rainfed",
+          "reason": "MCU 5 is a high-yielding Gossypium Hirsutum hybrid specifically recommended for rainfed conditions in the Central Zone (including Maharashtra). It fits perfectly within your 165-day maturity requirement. It exhibits strong resistance to drought and heat, and is highly resistant to Pink Bollworm, which is critical for Maharashtra's cotton belt. It offers a superior yield potential of up to 29.0 q/ha."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_013",
+          "variety_name": "Sujata",
+          "maturity": "149 - 160 days",
+          "irrigation": "Rainfed",
+          "reason": "Sujata is a Bt Cotton Hybrid released in 2010, optimized for rainfed Kharif cultivation in the Central Zone. With a maturity range of 149-160 days, it allows for timely field clearance. It features high waterlogging tolerance and moderate drought resistance, making it resilient against the erratic monsoon patterns often seen in Maharashtra. It also boasts a high yield potential of 28.3 q/ha."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_171",
+          "variety_name": "RCH 650",
+          "maturity": "142 - 159 days",
+          "irrigation": "Rainfed",
+          "reason": "Developed by MPKV Rahuri specifically for the region, RCH 650 is highly adapted to Maharashtra's agro-climatic conditions. It is exceptionally robust, featuring high resistance to both drought and waterlogging. Its resistance to Fall Armyworm and Pink Bollworm makes it a low-risk choice for rainfed farmers seeking stable yields within a 159-day window."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_233",
+          "variety_name": "ICAR_CICR_Cotton_Variety_233",
+          "maturity": "143 - 157 days",
+          "irrigation": "Rainfed",
+          "reason": "This variety is a strong candidate for rainfed systems due to its 'Highly Resistant' rating for drought. It matures early (up to 157 days) and provides excellent fiber quality with a staple length of 32mm. It is well-suited for the Central Zone and offers a balanced profile of disease resistance, particularly against Fusarium Stalk Rot."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_082",
+          "variety_name": "CNA 397",
+          "maturity": "149 - 161 days",
+          "irrigation": "Rainfed",
+          "reason": "CNA 397 is a transgenic hybrid of the Gossypium Herbaceum category, known for extreme hardiness. It is highly resistant to both drought and waterlogging. While its yield is slightly lower than Hirsutum types, its high ginning outturn (39%) and high resistance to Fusarium Stalk Rot make it a reliable choice for challenging rainfed environments in Maharashtra."
+        }
+      ],
+      "final_note": "For rainfed Kharif cultivation in Maharashtra, selecting a variety with 'High' or 'Resistant' drought tolerance is paramount. MCU 5 and Sujata offer the best balance of high yield and stress resilience. Ensure that sowing is completed with the onset of monsoon to maximize the 165-day growth window. All recommended varieties are verified ICAR-CICR records for the Central Zone.",
+      "warnings": [
+        "Monitor for Curvularia Leaf Spot in MCU 5 as it is documented as susceptible.",
+        "Sujata is susceptible to Fall Armyworm; regular scouting is advised during the vegetative phase.",
+        "Ensure proper field drainage even in rainfed conditions to prevent temporary waterlogging during peak monsoon, despite the high tolerance of these varieties."
+      ]
+    },
+    {
+      "query_id": "Q08",
+      "query": "I am from Gujarat and want a cotton variety for Kharif season with maturity below 170 days under irrigated conditions.",
+      "state": "Gujarat",
+      "season": "Kharif",
+      "irrigation": "irrigated",
+      "max_maturity_days": 170,
+      "retrieved_candidates_count": 36,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 12.08,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_133",
+          "variety_name": "Ankur 3100",
+          "maturity": "152 - 163 days",
+          "irrigation": "Irrigated",
+          "reason": "Ankur 3100 is a top-performing selection for Gujarat with a high yield potential of 22.9 - 29.6 q/ha. It fits perfectly within the requested maturity window and is specifically recommended for irrigated conditions. It offers high resistance to Stem Borer and Pink Bollworm, along with high waterlogging tolerance, which is beneficial for Gujarat's Kharif season."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_151",
+          "variety_name": "RCH 530",
+          "maturity": "152 - 165 days",
+          "irrigation": "Irrigated",
+          "reason": "RCH 530 is a high-yielding Hirsutum selection (21.3 - 27.4 q/ha) well-suited for the Central Zone. It demonstrates robust resistance to Fall Armyworm, Stem Borer, and Pink Bollworm. Its heat tolerance and high waterlogging tolerance make it a stable choice for irrigated Kharif cultivation in Gujarat."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_004",
+          "variety_name": "H 1098",
+          "maturity": "153 - 168 days",
+          "irrigation": "Irrigated",
+          "reason": "H 1098 is a transgenic hybrid offering superior fiber quality with a 32mm staple length. It provides a competitive yield of 22.9 - 26.6 q/ha. It is highly resistant to waterlogging and resistant to both Stem Borer and Pink Bollworm, making it ideal for intensive irrigated management."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_147",
+          "variety_name": "SP 7000",
+          "maturity": "142 - 154 days",
+          "irrigation": "Irrigated",
+          "reason": "For farmers seeking the lower end of the maturity spectrum, SP 7000 is an excellent transgenic hybrid. It matures in just 142-154 days while maintaining a high yield of 20.8 - 26.2 q/ha and a long staple length of 32mm. It is highly resistant to Stem Borer and highly drought tolerant."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_099",
+          "variety_name": "TVH 007",
+          "maturity": "145 - 163 days",
+          "irrigation": "Irrigated",
+          "reason": "TVH 007 is a Bt Cotton Hybrid (Non-Bt type) that excels in heat tolerance and charcoal rot resistance. With a yield range of 19.0 - 25.8 q/ha and a 32mm staple length, it provides a high-quality lint option for irrigated systems in the Central Zone."
+        }
+      ],
+      "final_note": "All recommended varieties are officially verified for the Central Zone (including Gujarat) and meet your requirement for maturity under 170 days. These varieties offer a balance of high yield, superior fiber length (28-32mm), and resistance to major pests like bollworms and stem borers.",
+      "warnings": [
+        "Monitor for Pink Bollworm regularly, even in resistant varieties, especially during the mid-to-late flowering stage.",
+        "Ensure proper field drainage as some varieties like NCS 207 and SP 7000 are susceptible to waterlogging.",
+        "Maintain optimal plant population and follow ICAR-CICR recommended spacing for irrigated Hirsutum and hybrid cotton."
+      ]
+    },
+    {
+      "query_id": "Q09",
+      "query": "I want to grow cotton in Madhya Pradesh during Kharif season. Recommend varieties maturing within 165 days under rainfed conditions.",
+      "state": "Madhya Pradesh",
+      "season": "Kharif",
+      "irrigation": "rainfed",
+      "max_maturity_days": 165,
+      "retrieved_candidates_count": 26,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 15.36,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_011",
+          "variety_name": "MCU 5",
+          "maturity": "155 - 165 days",
+          "irrigation": "Rainfed",
+          "reason": "MCU 5 is the top recommendation for rainfed conditions in Madhya Pradesh due to its high yield potential (22.2-29.0 q/ha) and robust resistance to drought and heat. It is a non-Bt hybrid that fits perfectly within the 165-day maturity window and offers excellent resistance to Pink Bollworm and Fall Armyworm."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_013",
+          "variety_name": "Sujata",
+          "maturity": "149 - 160 days",
+          "irrigation": "Rainfed",
+          "reason": "Sujata is a high-yielding Bt Cotton Hybrid (22.9-28.3 q/ha) specifically recommended for rainfed conditions in the Central Zone. It features high resistance to waterlogging and Turcicum leaf blight, making it suitable for the variable rainfall patterns of the Kharif season in MP."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_117",
+          "variety_name": "Cotton_Line_Ext_0",
+          "maturity": "149 - 161 days",
+          "irrigation": "Rainfed",
+          "reason": "Also known as Suraj, this variety is highly drought-tolerant and specifically adapted for rainfed Kharif cultivation. It provides a stable yield of 21.5-25.0 q/ha and is highly resistant to stem borer and charcoal rot, ensuring crop security under moisture stress."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_233",
+          "variety_name": "ICAR_CICR_Cotton_Variety_233",
+          "maturity": "143 - 157 days",
+          "irrigation": "Rainfed",
+          "reason": "This selection is ideal for farmers seeking high drought resistance and superior fiber quality (32mm staple length). It matures early (143-157 days), which helps in escaping late-season moisture stress common in rainfed systems."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_171",
+          "variety_name": "RCH 650",
+          "maturity": "142 - 159 days",
+          "irrigation": "Rainfed",
+          "reason": "RCH 650 is a highly drought-resistant and waterlogging-tolerant variety. It is particularly noted for its high resistance to Fall Armyworm and heat, making it a resilient choice for the agro-climatic conditions of Madhya Pradesh."
+        }
+      ],
+      "final_note": "For rainfed Kharif cultivation in Madhya Pradesh, selecting varieties with high drought tolerance and a maturity period under 160 days is critical to ensure the crop completes its reproductive phase before soil moisture depletes. MCU 5 and Sujata offer the best balance of yield and stress resistance.",
+      "warnings": [
+        "Monitor for Pink Bollworm regularly, especially in non-Bt varieties like MCU 5 and RCH 650.",
+        "Ensure proper field drainage to prevent damage from sudden heavy rainfall during the Kharif season.",
+        "Maintain recommended plant spacing to optimize yield under rainfed moisture constraints."
+      ]
+    },
+    {
+      "query_id": "Q10",
+      "query": "I am from Vidarbha, Maharashtra looking for drought tolerant Kharif cotton maturing within 160 days under rainfed farming.",
+      "state": "Maharashtra",
+      "season": "Kharif",
+      "irrigation": "rainfed",
+      "max_maturity_days": 160,
+      "retrieved_candidates_count": 16,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 11.98,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_149",
+          "variety_name": "Tulasi 111",
+          "maturity": "141 - 158 days",
+          "irrigation": "Rainfed",
+          "reason": "This Gossypium Arboreum hybrid is highly optimized for rainfed conditions in the Central Zone. It features 'Highly Resistant' ratings for both drought and heat stress, which are critical for Vidarbha's climate. Additionally, it offers high resistance to Pink Bollworm and Fusarium Stalk Rot, ensuring yield stability within the requested 160-day window."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_171",
+          "variety_name": "RCH 650",
+          "maturity": "142 - 159 days",
+          "irrigation": "Rainfed",
+          "reason": "A Gossypium Barbadense hybrid specifically recommended for rainfed Central Zone farming. It is 'Highly Resistant' to drought, waterlogging, and Fall Armyworm. Its high 'stay-green' characteristic allows the plant to maintain photosynthetic activity during late-season moisture stress common in Vidarbha."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_233",
+          "variety_name": "ICAR_CICR_Cotton_Variety_233",
+          "maturity": "143 - 157 days",
+          "irrigation": "Rainfed",
+          "reason": "Developed by CCS HAU and verified for the Central Zone, this selection is 'Highly Resistant' to drought. It is particularly valuable for its superior fiber quality (32mm staple length) even under rainfed conditions, and it shows good resistance to Fusarium Stalk Rot."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_013",
+          "variety_name": "Sujata",
+          "maturity": "149 - 160 days",
+          "irrigation": "Rainfed",
+          "reason": "A Bt Cotton Hybrid that fits the maturity profile perfectly. While 'Moderately Resistant' to drought, it is 'Highly Resistant' to waterlogging, providing a balanced risk profile against the erratic monsoon patterns of Maharashtra. It offers the highest potential yield (up to 28.3 q/ha) among the rainfed-compatible candidates."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_060",
+          "variety_name": "NCS 145",
+          "maturity": "143 - 156 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "Although categorized under protective irrigation, its 'Highly Resistant' drought and heat tolerance ratings make it exceptionally hardy for Vidarbha. It features a high ginning outturn of 35% and is highly resistant to Charcoal Rot, a common soil-borne disease in the region."
+        }
+      ],
+      "final_note": "For the Vidarbha region, prioritizing Gossypium Arboreum or specialized rainfed hybrids like Tulasi 111 and RCH 650 is recommended to mitigate the risks of dry spells. These varieties align with ICAR-CICR recommendations for moisture-stressed environments while staying within the 160-day maturity limit.",
+      "warnings": [
+        "Monitor for Stem Borer in NCS 145 and ICAR_CICR_Cotton_Variety_233 as they are listed as susceptible.",
+        "Ensure proper drainage even in rainfed conditions to prevent soil-borne diseases like Charcoal Rot in susceptible varieties.",
+        "Sujata and Tulasi 111 are susceptible to Fall Armyworm; regular scouting is advised during the early vegetative phase."
+      ]
+    },
+    {
+      "query_id": "Q11",
+      "query": "I am a farmer in Gujarat looking for a Kharif cotton variety under protective irrigated conditions maturing within 175 days.",
+      "state": "Gujarat",
+      "season": "Kharif",
+      "irrigation": "protective irrigated",
+      "max_maturity_days": 175,
+      "retrieved_candidates_count": 73,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 15.55,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_061",
+          "variety_name": "NCS 207",
+          "maturity": "146 - 161 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "NCS 207 offers the highest yield potential (up to 29.0 q/ha) among the suitable candidates for Gujarat. It features a high ginning outturn of 38% and a superior staple length of 30mm. Agronomically, it is highly drought-resistant and shows strong resistance to both Stem Borer and Pink Bollworm, making it ideal for protective irrigated conditions in the Central Zone."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_022",
+          "variety_name": "Surabhi",
+          "maturity": "143 - 155 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "A high-yielding transgenic hybrid (up to 27.7 q/ha) that fits well within the 175-day window. It is highly resistant to waterlogging and drought, providing stability in Gujarat's fluctuating Kharif weather. It also offers resistance to Fall Armyworm and Stem Borer."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_087",
+          "variety_name": "Virnar",
+          "maturity": "141 - 158 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "Virnar is a robust selection with a yield potential of 27.4 q/ha. It is particularly noted for its high resistance to Fusarium Stalk Rot and drought. With a 30mm staple length and 38% ginning outturn, it provides excellent fiber quality for the region."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_036",
+          "variety_name": "Nandyal Cotton 28",
+          "maturity": "159 - 171 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "This variety is highly recommended for its heat and drought tolerance, which are critical for Gujarat. It delivers a competitive yield (up to 27.3 q/ha) and is highly resistant to Pink Bollworm and Charcoal Rot, ensuring crop health through the late maturity phase."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_062",
+          "variety_name": "Achiever",
+          "maturity": "151 - 167 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "Achiever stands out with the highest ginning outturn (39%) in this group. As a transgenic hybrid, it provides high resistance to heat and Stem Borer. It is well-suited for farmers looking for high lint recovery under protective irrigation."
+        }
+      ],
+      "final_note": "For the Kharif season in Gujarat, selecting varieties with high drought and heat tolerance is essential even under protective irrigation. The recommended varieties all fall within the 175-day maturity limit and are officially verified for the Central Zone. NCS 207 and Surabhi are prioritized for their superior yield and pest resistance profiles.",
+      "warnings": [
+        "Monitor for waterlogging as NCS 207 and Achiever are susceptible to poor drainage.",
+        "Non-Bt varieties like Virnar require intensive monitoring for bollworm infestations.",
+        "Ensure timely application of protective irrigation during the flowering and boll development stages to maximize yield potential."
+      ]
+    },
+    {
+      "query_id": "Q12",
+      "query": "I am from Madhya Pradesh cultivating cotton in Kharif with canal irrigation, variety maturing within 170 days.",
+      "state": "Madhya Pradesh",
+      "season": "Kharif",
+      "irrigation": "irrigated",
+      "max_maturity_days": 170,
+      "retrieved_candidates_count": 36,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 10.2,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_133",
+          "variety_name": "Ankur 3100",
+          "maturity": "152 - 163 days",
+          "irrigation": "Irrigated",
+          "reason": "Ankur 3100 offers the highest yield potential (up to 29.6 q/ha) among the candidates for irrigated conditions in Madhya Pradesh. It fits perfectly within the 170-day window and shows high resistance to Stem Borer and Pink Bollworm, which are critical for Kharif cultivation."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_151",
+          "variety_name": "RCH 530",
+          "maturity": "152 - 165 days",
+          "irrigation": "Irrigated",
+          "reason": "This variety is highly productive (up to 27.4 q/ha) and specifically suited for the Central Zone. It features excellent heat and waterlogging tolerance, making it resilient to the fluctuating weather patterns of the Kharif season in MP."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_004",
+          "variety_name": "H 1098",
+          "maturity": "153 - 168 days",
+          "irrigation": "Irrigated",
+          "reason": "H 1098 is a transgenic hybrid with a superior staple length of 32mm. It is highly resistant to waterlogging, which is advantageous for canal-irrigated fields, and provides a stable yield of up to 26.6 q/ha."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_147",
+          "variety_name": "SP 7000",
+          "maturity": "142 - 154 days",
+          "irrigation": "Irrigated",
+          "reason": "A high-yielding Arboreum hybrid (up to 26.2 q/ha) that matures early within the requested timeframe. It offers a 32mm staple length and high resistance to Stem Borer, providing a robust alternative to Hirsutum varieties."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_099",
+          "variety_name": "TVH 007",
+          "maturity": "145 - 163 days",
+          "irrigation": "Irrigated",
+          "reason": "TVH 007 is recommended for its high heat tolerance and resistance to Charcoal Rot. It produces creamy white lint with a 32mm staple length and fits well within the canal irrigation schedule of Madhya Pradesh."
+        }
+      ],
+      "final_note": "For canal-irrigated Kharif cotton in Madhya Pradesh, selecting varieties with high waterlogging tolerance and resistance to the bollworm complex is essential. The recommended hybrids balance high yield potential with superior fiber quality (staple lengths of 28-32mm).",
+      "warnings": [
+        "Monitor for Fall Armyworm as several high-yielding varieties like Ankur 3100 and SP 7000 are susceptible.",
+        "Ensure proper field drainage to prevent root rot, even in irrigated conditions.",
+        "H 1098 is susceptible to heat stress; ensure timely irrigation during peak flowering if temperatures spike."
+      ]
+    },
+    {
+      "query_id": "Q13",
+      "query": "I am a farmer from Punjab. I want to grow cotton during Kharif season under irrigated conditions and need a variety that matures within 165 days.",
+      "state": "Punjab",
+      "season": "Kharif",
+      "irrigation": "irrigated",
+      "max_maturity_days": 165,
+      "retrieved_candidates_count": 28,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 11.4,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_209",
+          "variety_name": "US 333",
+          "maturity": "141 - 151 days",
+          "irrigation": "Irrigated",
+          "reason": "Top-performing variety for the Northern Zone with the highest yield potential (up to 30.1 q/ha). It is highly resistant to Stem Borer and Fusarium Stalk Rot, and resistant to Pink Bollworm, making it exceptionally reliable for Punjab's irrigated Kharif conditions."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_031",
+          "variety_name": "CICR 23 Bt",
+          "maturity": "140 - 150 days",
+          "irrigation": "Irrigated",
+          "reason": "An excellent medium-maturity choice that fits well within the 165-day window. It offers high yield potential (up to 27.3 q/ha) and unique dual resistance to both drought and waterlogging, providing a safety net against Punjab's variable monsoon patterns."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_127",
+          "variety_name": "F 2383",
+          "maturity": "148 - 164 days",
+          "irrigation": "Irrigated",
+          "reason": "A high-yielding selection (up to 28.4 q/ha) with high lodging resistance and high resistance to Turcicum Leaf Blight. Its maturity is at the upper limit of the farmer's requirement, allowing for maximum biomass and lint production."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_108",
+          "variety_name": "NH 1902 Bt",
+          "maturity": "148 - 163 days",
+          "irrigation": "Irrigated",
+          "reason": "A robust Gossypium Arboreum hybrid with high drought tolerance and resistance to Pink Bollworm and Fusarium Stalk Rot. It provides stable yields (up to 26.6 q/ha) and features a 30mm staple length."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_095",
+          "variety_name": "Srinandi",
+          "maturity": "145 - 156 days",
+          "irrigation": "Irrigated",
+          "reason": "A reliable medium-maturity hybrid with consistent yields (up to 26.4 q/ha). It is specifically noted for its resistance to both Stem Borer and Pink Bollworm, which are critical pests in the Punjab cotton belt."
+        }
+      ],
+      "final_note": "For the Punjab region, selecting varieties that mature within 160 days is ideal as it allows for timely field clearance for the subsequent wheat crop. The recommended varieties all feature strong resistance profiles against the Pink Bollworm and local stalk rots, which are prevalent in irrigated Kharif systems.",
+      "warnings": [
+        "Monitor for Fall Armyworm as several high-yielding varieties like Srinandi show susceptibility.",
+        "Ensure proper field drainage for F 2383 and US 333 as they are susceptible to waterlogging.",
+        "Maintain strict irrigation schedules during the flowering and boll-filling stages to maximize the high yield potential of these hybrids."
+      ]
+    },
+    {
+      "query_id": "Q14",
+      "query": "I am from Haryana and want to cultivate Kharif cotton under irrigated conditions maturing within 170 days.",
+      "state": "Haryana",
+      "season": "Kharif",
+      "irrigation": "irrigated",
+      "max_maturity_days": 170,
+      "retrieved_candidates_count": 46,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 13.9,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_129",
+          "variety_name": "CSH 39 R",
+          "maturity": "153 - 170 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "Top-performing non-Bt hybrid for the Northern Zone (Haryana) with a high yield potential of up to 28.4 q/ha. It fits the farmer's 170-day maturity window perfectly and offers high resistance to Pink Bollworm and drought, making it highly reliable for irrigated systems."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_127",
+          "variety_name": "F 2383",
+          "maturity": "148 - 164 days",
+          "irrigation": "Irrigated",
+          "reason": "A recently released (2023) selection variety with exceptional yield potential (up to 28.4 q/ha). It is highly resistant to Turcicum Leaf Blight and Banded Leaf Sheath Blight, ensuring crop health in the Northern Zone's irrigated conditions."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_031",
+          "variety_name": "CICR 23 Bt",
+          "maturity": "140 - 150 days",
+          "irrigation": "Irrigated",
+          "reason": "A high-yielding non-Bt hybrid (up to 27.3 q/ha) that matures early (140-150 days). It is ideal for farmers looking to clear the field early for subsequent crops. It features high resistance to both drought and waterlogging."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_108",
+          "variety_name": "NH 1902 Bt",
+          "maturity": "148 - 163 days",
+          "irrigation": "Irrigated",
+          "reason": "A Gossypium Arboreum hybrid offering a robust yield of up to 26.6 q/ha. It is highly resistant to Fusarium Stalk Rot and Pink Bollworm, providing a stable alternative for the Northern Zone with excellent fiber staple length (30mm)."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_111",
+          "variety_name": "JLA 1207",
+          "maturity": "152 - 167 days",
+          "irrigation": "Irrigated",
+          "reason": "A transgenic hybrid specifically suited for irrigated conditions in the Northern Zone. It yields up to 26.4 q/ha and is distinguished by its high resistance to waterlogging and heat, which are critical for Haryana's Kharif season."
+        }
+      ],
+      "final_note": "All recommended varieties are officially verified for the Northern Zone (Punjab, Haryana, Rajasthan) and fit within your 170-day maturity constraint. These varieties offer a balance of high yield potential (26.4 - 28.4 q/ha) and resistance to regional pests like Pink Bollworm and diseases like Fusarium Stalk Rot.",
+      "warnings": [
+        "Monitor for Pink Bollworm regularly, especially in non-Bt hybrids like CSH 39 R and CICR 23 Bt.",
+        "Ensure proper field drainage to prevent waterlogging, despite the tolerance levels of varieties like JLA 1207.",
+        "Maintain recommended plant spacing to optimize the sympodial branching habits of these hybrids."
+      ]
+    },
+    {
+      "query_id": "Q15",
+      "query": "I am a farmer from Rajasthan looking for a Kharif cotton variety maturing within 165 days under irrigated conditions.",
+      "state": "Rajasthan",
+      "season": "Kharif",
+      "irrigation": "irrigated",
+      "max_maturity_days": 165,
+      "retrieved_candidates_count": 28,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 9.93,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_209",
+          "variety_name": "US 333",
+          "maturity": "141 - 151 days",
+          "irrigation": "Irrigated",
+          "reason": "US 333 is the highest-yielding candidate for the Northern Zone (Rajasthan) under irrigated conditions, offering up to 30.1 q/ha. It matures well within the 165-day limit and exhibits high resistance to Stem Borer and Fusarium Stalk Rot, which are critical for the region."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_127",
+          "variety_name": "F 2383",
+          "maturity": "148 - 164 days",
+          "irrigation": "Irrigated",
+          "reason": "A high-yielding selection (up to 28.4 q/ha) specifically released in 2023. It fits the maturity requirement perfectly and features high lodging resistance and stay-green characteristics, making it ideal for intensive irrigated management in Rajasthan."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_031",
+          "variety_name": "CICR 23 Bt",
+          "maturity": "140 - 150 days",
+          "irrigation": "Irrigated",
+          "reason": "This Non-Bt Hybrid provides a robust yield of up to 27.3 q/ha. It is highly recommended for its dual resistance to drought and waterlogging, ensuring stability in the variable Kharif climate of Rajasthan while maturing early (140-150 days)."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_108",
+          "variety_name": "NH 1902 Bt",
+          "maturity": "148 - 163 days",
+          "irrigation": "Irrigated",
+          "reason": "An excellent choice for Rajasthan with a yield potential of 26.6 q/ha. It shows high resistance to drought and Fusarium stalk rot, and its 30mm staple length provides superior fiber quality for the Northern Zone market."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_095",
+          "variety_name": "Srinandi",
+          "maturity": "145 - 156 days",
+          "irrigation": "Irrigated",
+          "reason": "Srinandi offers a competitive yield of up to 26.4 q/ha and matures within 156 days. It is noted for its resistance to Stem Borer and Pink Bollworm, which are significant pests in the irrigated cotton belts of Rajasthan."
+        }
+      ],
+      "final_note": "All recommended varieties are officially verified for the Northern Zone (Punjab, Haryana, Rajasthan) and meet your maturity constraint of under 165 days. These varieties offer a balance of high yield potential and resistance to regional biotic stresses like Fusarium Stalk Rot and Bollworms.",
+      "warnings": [
+        "Monitor for Pink Bollworm regularly, especially in Non-Bt hybrids like CICR 23 Bt and Srinandi.",
+        "Ensure proper drainage in irrigated fields to prevent secondary soil salinity, common in parts of Rajasthan.",
+        "Maintain recommended plant geometry (spacing) to maximize the yield potential of sympodial branching varieties."
+      ]
+    },
+    {
+      "query_id": "Q16",
+      "query": "I am from Punjab looking for an early maturing Kharif cotton variety that matures within 160 days under irrigated conditions.",
+      "state": "Punjab",
+      "season": "Kharif",
+      "irrigation": "irrigated",
+      "max_maturity_days": 160,
+      "retrieved_candidates_count": 15,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 11.1,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_209",
+          "variety_name": "US 333",
+          "maturity": "141 - 151 days",
+          "irrigation": "Irrigated",
+          "reason": "This is the highest-yielding candidate (up to 30.1 q/ha) for the Northern Zone. It fits perfectly within the early maturity requirement (141-151 days) and offers exceptional resistance to Stem Borer and Fusarium Stalk Rot, which are critical for Punjab's irrigated conditions."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_031",
+          "variety_name": "CICR 23 Bt",
+          "maturity": "140 - 150 days",
+          "irrigation": "Irrigated",
+          "reason": "An excellent choice for Punjab with a very short maturity window. It provides high yield potential (up to 27.3 q/ha) and is highly resistant to drought and waterlogging, making it robust against the climatic variability of the Kharif season."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_095",
+          "variety_name": "Srinandi",
+          "maturity": "145 - 156 days",
+          "irrigation": "Irrigated",
+          "reason": "A high-yielding Bt Cotton Hybrid (up to 26.4 q/ha) that matures well within 160 days. It features a high ginning outturn of 38% and shows strong resistance to Pink Bollworm and Stem Borer, ensuring fiber quality and crop safety."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_074",
+          "variety_name": "Phule 388",
+          "maturity": "141 - 158 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "Developed by PAU Ludhiana, this variety is specifically adapted to the local Punjab environment. It offers reliable resistance to Pink Bollworm and Charcoal Rot, with a maturity period that allows for timely field clearance for subsequent Rabi crops."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_089",
+          "variety_name": "Gaorani 6",
+          "maturity": "141 - 158 days",
+          "irrigation": "Irrigated",
+          "reason": "A transgenic hybrid recommended for the Northern Zone that combines early maturity with high heat and drought tolerance. It maintains a stable yield (up to 22.8 q/ha) and features a high stay-green characteristic, beneficial for late-season fiber development."
+        }
+      ],
+      "final_note": "For Punjab's irrigated Kharif season, selecting varieties with maturity under 160 days is crucial to avoid late-season pest pressure and ensure timely sowing of wheat. US 333 and CICR 23 Bt are the top performers in terms of yield and early maturity. Ensure seeds are sourced from certified agencies to guarantee the genetic purity of these ICAR-CICR verified records.",
+      "warnings": [
+        "Monitor for Fall Armyworm in US 333 and Srinandi as they are listed as susceptible.",
+        "Avoid water stress during the flowering stage even in drought-tolerant varieties like CICR 23 Bt to prevent square dropping.",
+        "Phule 388 is susceptible to drought; ensure consistent irrigation scheduling in the Northern Zone's heat."
+      ]
+    },
+    {
+      "query_id": "Q17",
+      "query": "I am farming in Haryana and need a rainfed cotton variety for Kharif maturing within 170 days.",
+      "state": "Haryana",
+      "season": "Kharif",
+      "irrigation": "rainfed",
+      "max_maturity_days": 170,
+      "retrieved_candidates_count": 39,
+      "model_used": "gemini-3.1-flash-lite-preview",
+      "execution_time_seconds": 4.3,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_035",
+          "variety_name": "Nandyal Cotton 25",
+          "maturity": "140 - 158 days",
+          "irrigation": "Rainfed",
+          "reason": "This variety is specifically suited for rainfed conditions and falls well within the 170-day maturity limit. It exhibits high resistance to waterlogging, which is a critical trait for Kharif season stability in the Northern Zone."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_040",
+          "variety_name": "H 1236",
+          "maturity": "154 - 169 days",
+          "irrigation": "Rainfed",
+          "reason": "This variety is adapted for rainfed cultivation and meets the maturity requirement. It offers high resistance to bollworms and fall armyworm, providing robust protection against major pests in the Northern Zone."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_058",
+          "variety_name": "Ankur 3028",
+          "maturity": "148 - 162 days",
+          "irrigation": "Rainfed",
+          "reason": "Ankur 3028 is a high-yielding rainfed variety with a maturity profile that fits the farmer's timeline. It possesses excellent resistance to a broad spectrum of diseases, including Turcicum leaf blight and Curvularia leaf spot."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_068",
+          "variety_name": "G Cot 16",
+          "maturity": "148 - 162 days",
+          "irrigation": "Rainfed",
+          "reason": "Specifically recommended for rainfed conditions in the Northern Zone, this variety matures within the requested window and shows high resistance to fall armyworm and stem borer."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_104",
+          "variety_name": "PBD 88",
+          "maturity": "146 - 160 days",
+          "irrigation": "Rainfed",
+          "reason": "PBD 88 is a high-yielding rainfed option with a 146-160 day maturity range. It features high resistance to Fusarium stalk rot and is well-suited for the agro-climatic conditions of the Northern Zone."
+        }
+      ],
+      "final_note": "The selected varieties are specifically chosen for their rainfed compatibility and maturity profiles suitable for the Northern Zone (Haryana). Ensure that soil moisture is managed during the critical flowering and boll development stages to maximize yield potential.",
+      "warnings": [
+        "Monitor fields regularly for pest outbreaks, particularly in non-Bt varieties where bollworm pressure may be higher.",
+        "Ensure proper field drainage to prevent waterlogging, even in varieties with reported tolerance.",
+        "Adhere to recommended plant spacing to optimize light interception and air circulation, reducing the risk of fungal diseases."
+      ]
+    },
+    {
+      "query_id": "Q18",
+      "query": "I am from Rajasthan needing a drought tolerant Kharif cotton variety maturing within 165 days under rainfed conditions.",
+      "state": "Rajasthan",
+      "season": "Kharif",
+      "irrigation": "rainfed",
+      "max_maturity_days": 165,
+      "retrieved_candidates_count": 25,
+      "model_used": "gemini-3-flash-preview",
+      "execution_time_seconds": 15.16,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_242",
+          "variety_name": "ICAR_CICR_Cotton_Variety_242",
+          "maturity": "152 - 163 days",
+          "irrigation": "Rainfed",
+          "reason": "This variety is the most robust choice for Rajasthan's rainfed conditions, as it is documented with 'Highly Resistant' ratings for both drought and heat. It fits perfectly within the 165-day maturity window and offers sympodial branching with a high ginning outturn of 35% and superior staple length of 32mm."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_152",
+          "variety_name": "NCS 277",
+          "maturity": "147 - 159 days",
+          "irrigation": "Rainfed",
+          "reason": "NCS 277 is specifically recommended for the Northern Zone under rainfed conditions. It is categorized as 'Resistant' to drought and 'Highly Resistant' to Pink Bollworm, which is a critical pest in Rajasthan. It matures well before the 165-day limit and maintains a 30mm staple length."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_258",
+          "variety_name": "ICAR_CICR_Cotton_Variety_258",
+          "maturity": "143 - 158 days",
+          "irrigation": "Rainfed",
+          "reason": "A transgenic hybrid that combines drought resistance with high heat tolerance. It is particularly strong against soil-borne diseases like Charcoal Rot and Fusarium Stalk Rot, which can be prevalent in the Northern Zone's rainfed systems. It offers a stable yield of up to 25.2 q/ha."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_218",
+          "variety_name": "SP 1010",
+          "maturity": "150 - 161 days",
+          "irrigation": "Rainfed",
+          "reason": "As a Gossypium Herbaceum selection, this variety is naturally adapted to moisture-stress environments. It is rated 'Resistant' to drought and 'Highly Resistant' to Pink Bollworm. Its 30mm staple length and 38% ginning outturn make it a high-quality fiber producer for rainfed Rajasthan."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_194",
+          "variety_name": "Bio 333",
+          "maturity": "142 - 156 days",
+          "irrigation": "Rainfed",
+          "reason": "Bio 333 is a high-yielding Bt Cotton Hybrid (up to 30.5 q/ha) that is 'Resistant' to drought and 'Highly Resistant' to waterlogging, providing security against erratic monsoon patterns. Its early-to-medium maturity (max 156 days) ensures it avoids late-season moisture stress."
+        }
+      ],
+      "final_note": "For Rajasthan's rainfed Kharif season, prioritizing 'Highly Resistant' drought varieties like COT_VER_242 is essential. These varieties are selected based on AICCIP Northern Zone trials to ensure they can withstand the high thermal units and moisture fluctuations typical of the region while maturing within the 165-day window to allow for potential field clearance for Rabi crops.",
+      "warnings": [
+        "Monitor for Pink Bollworm even in resistant varieties, especially during the mid-to-late flowering stage.",
+        "Ensure proper field drainage to prevent temporary waterlogging during heavy monsoon spells, despite drought tolerance.",
+        "Maintain recommended plant geometry (spacing) to optimize moisture utilization in rainfed conditions."
+      ]
+    },
+    {
+      "query_id": "Q19",
+      "query": "I am a cotton grower in Southern Zone looking for Kharif varieties maturing within 165 days under rainfed conditions.",
+      "state": "Southern Zone",
+      "season": "Kharif",
+      "irrigation": "rainfed",
+      "max_maturity_days": 165,
+      "retrieved_candidates_count": 32,
+      "model_used": "gemini-3.1-flash-lite-preview",
+      "execution_time_seconds": 4.2,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_012",
+          "variety_name": "MCU 7",
+          "maturity": "143 - 153 days",
+          "irrigation": "Rainfed",
+          "reason": "Specifically recommended for the Southern Zone under rainfed conditions. It features high drought tolerance and excellent resistance to stem borer and Curvularia leaf spot, making it highly suitable for the requested maturity window and water-limited environment."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_084",
+          "variety_name": "Prabhat",
+          "maturity": "155 - 165 days",
+          "irrigation": "Rainfed",
+          "reason": "Matches the 165-day maturity limit perfectly. It is specifically recommended for the Southern Zone under rainfed conditions and offers high resistance to pink stem borer, charcoal rot, and Fusarium stalk rot, ensuring robust performance in rainfed systems."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_204",
+          "variety_name": "Bio 444",
+          "maturity": "149 - 160 days",
+          "irrigation": "Rainfed",
+          "reason": "A suitable rainfed variety for the Southern Zone with a maturity profile well within the 165-day limit. It exhibits strong waterlogging tolerance and high resistance to Turcicum leaf blight and Curvularia leaf spot."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_202",
+          "variety_name": "NCS 222",
+          "maturity": "143 - 153 days",
+          "irrigation": "Rainfed",
+          "reason": "Recommended for the Southern Zone under rainfed conditions. It provides excellent resistance to pink stem borer and Turcicum leaf blight, with a maturity duration that allows for timely harvest before the end of the Kharif season."
+        }
+      ],
+      "final_note": "The recommended varieties are selected based on their specific suitability for the Southern Zone (AP, TS, TN) under rainfed conditions and their maturity profiles within the 165-day limit. Please ensure soil testing is conducted prior to sowing to optimize fertilizer application.",
+      "warnings": [
+        "Monitor for Pink Bollworm regularly, especially during the flowering and boll development stages.",
+        "Ensure proper field drainage to prevent waterlogging, even in varieties with moderate tolerance.",
+        "Adhere to recommended plant spacing to ensure adequate aeration and light penetration, which helps in managing leaf spot diseases.",
+        "Since these are rainfed varieties, prioritize moisture conservation practices such as mulching or ridge-and-furrow sowing."
+      ]
+    },
+    {
+      "query_id": "Q20",
+      "query": "I am a farmer in Central Zone seeking high yielding Kharif cotton varieties maturing within 170 days under irrigated conditions.",
+      "state": "Central Zone",
+      "season": "Kharif",
+      "irrigation": "irrigated",
+      "max_maturity_days": 170,
+      "retrieved_candidates_count": 36,
+      "model_used": "gemini-3.1-flash-lite-preview",
+      "execution_time_seconds": 4.46,
+      "region_matching_valid": true,
+      "season_matching_valid": true,
+      "maturity_constraint_valid": true,
+      "llm_success": true,
+      "json_schema_valid": true,
+      "candidate_grounding_valid": true,
+      "maturity_reporting_valid": true,
+      "irrigation_handled": true,
+      "pipeline_success": true,
+      "recommended_varieties": [
+        {
+          "rank": 1,
+          "variety_id": "COT_VER_003",
+          "variety_name": "H 777",
+          "maturity": "148 - 158 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "This variety is specifically recommended for the Central Zone (GJ, MH, MP) and fits well within the 170-day maturity constraint. It exhibits high resistance to Stem Borer and Turcicum Leaf Blight, with a ginning outturn of 37% and a staple length of 29mm, making it a reliable choice for irrigated conditions."
+        },
+        {
+          "rank": 2,
+          "variety_id": "COT_VER_022",
+          "variety_name": "Surabhi",
+          "maturity": "143 - 155 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "Surabhi is highly suitable for the Central Zone with a maturity profile well under 170 days. It demonstrates high resistance to waterlogging and multiple diseases, including Turcicum Leaf Blight, and offers a strong yield potential of 21.8-27.7 q/ha."
+        },
+        {
+          "rank": 3,
+          "variety_id": "COT_VER_005",
+          "variety_name": "F 414",
+          "maturity": "144 - 156 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "This variety is well-adapted to the Central Zone and meets the maturity requirements. It is noted for high waterlogging tolerance and high resistance to Curvularia Leaf Spot, providing a stable yield of 18.9-24.9 q/ha."
+        },
+        {
+          "rank": 4,
+          "variety_id": "COT_VER_060",
+          "variety_name": "NCS 145",
+          "maturity": "143 - 156 days",
+          "irrigation": "Protective Irrigated",
+          "reason": "NCS 145 is a robust selection for the Central Zone with excellent heat and drought tolerance. Its maturity range is ideal for the farmer's 170-day limit, and it shows high resistance to Charcoal Rot."
+        },
+        {
+          "rank": 5,
+          "variety_id": "COT_VER_112",
+          "variety_name": "CICR BT COTTON 55",
+          "maturity": "144 - 157 days",
+          "irrigation": "Irrigated",
+          "reason": "This variety is specifically suited for irrigated conditions in the Central Zone. It features high resistance to Fall Armyworm and a solid yield potential of 20.7-24.6 q/ha, ensuring productivity within the requested timeframe."
+        }
+      ],
+      "final_note": "The recommended varieties are selected based on their suitability for the Central Zone (GJ, MH, MP) and their ability to mature within the 170-day window under irrigated or protective irrigated conditions. Please ensure adherence to local AICCIP guidelines for sowing dates and integrated pest management practices.",
+      "warnings": [
+        "Monitor for Pink Bollworm incidence regularly, especially during the flowering and boll development stages.",
+        "Ensure proper field drainage despite the waterlogging tolerance of some varieties to prevent root-zone suffocation.",
+        "Maintain recommended plant spacing to optimize light interception and reduce humidity-related disease pressure.",
+        "Follow integrated nutrient management (INM) to maximize the yield potential of these high-performing varieties."
+      ]
+    }
+  ]
+}

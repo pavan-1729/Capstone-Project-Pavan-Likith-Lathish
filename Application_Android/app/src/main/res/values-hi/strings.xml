@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">फार्मर-अवेयर</string>
+    <string name="demo_mode_label">डेमो मोड</string>
+    <string name="demo_data_label">डेमो डेटा</string>
+    <string name="btn_continue">जारी रखें</string>
+    <string name="btn_next">अगला</string>
+    <string name="btn_back">पीछे</string>
+    <string name="btn_submit">जमा करें</string>
+    <string name="btn_cancel">रद्द करें</string>
+    <string name="btn_save">सहेजें</string>
+    <string name="btn_close">बंद करें</string>
+    <string name="btn_retry">पुनः प्रयास करें</string>
+    <string name="not_available">उपलब्ध नहीं</string>
+    <string name="loading">लोड हो रहा है…</string>
+    <string name="ok">ठीक है</string>
+
+    <string name="splash_title">फार्मर-अवेयर</string>
+    <string name="splash_subtitle">किसान-जागरूक जलवायु-अनुकूल बीज सिफारिश</string>
+    <string name="splash_research">रिट्रीवल-ऑगमेंटेड कृषि ज्ञान का उपयोग करके</string>
+
+    <string name="choose_language">अपनी भाषा चुनें</string>
+    <string name="login_title">वापस स्वागत है</string>
+    <string name="login_subtitle">अपने खाते में साइन इन करें</string>
+    <string name="hint_mobile_email">मोबाइल नंबर / ईमेल</string>
+    <string name="hint_password">पासवर्ड</string>
+    <string name="btn_login">लॉगिन</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="create_account">खाता बनाएं</string>
+    <string name="continue_as_demo">डेमो किसान के रूप में जारी रखें</string>
+    <string name="login_error_invalid">अमान्य मोबाइल/ईमेल या पासवर्ड</string>
+    <string name="login_success">लॉगिन सफल</string>
+
+    <string name="register_title">खाता बनाएं</string>
+    <string name="hint_full_name">पूरा नाम</string>
+    <string name="hint_mobile">मोबाइल नंबर</string>
+    <string name="hint_email">ईमेल</string>
+    <string name="hint_confirm_password">पासवर्ड की पुष्टि करें</string>
+    <string name="farmer_information">किसान जानकारी</string>
+    <string name="label_state">राज्य</string>
+    <string name="label_district">जिला</string>
+    <string name="label_village">गांव</string>
+    <string name="label_primary_crop">मुख्य फसल</string>
+    <string name="btn_create_account">खाता बनाएं</string>
+    <string name="error_passwords_mismatch">पासवर्ड मेल नहीं खाते</string>
+    <string name="error_field_required">यह फील्ड आवश्यक है</string>
+
+    <string name="nav_home">होम</string>
+    <string name="nav_seeds">बीज</string>
+    <string name="nav_crop_health">फसल स्वास्थ्य</string>
+    <string name="nav_notifications">सूचनाएं</string>
+    <string name="nav_profile">प्रोफ़ाइल</string>
+
+    <string name="greeting_morning">सुप्रभात, %1$s</string>
+    <string name="greeting_afternoon">नमस्कार, %1$s</string>
+    <string name="greeting_evening">शुभ संध्या, %1$s</string>
+    <string name="weather_title">मौसम</string>
+    <string name="demo_weather_label">डेमो मौसम डेटा</string>
+    <string name="find_right_seed">🌽 सही मक्का बीज खोजें</string>
+    <string name="btn_start_recommendation">सिफारिश शुरू करें</string>
+    <string name="my_crop_status">मेरी मक्का फसल</string>
+
+    <string name="crop_maize">मक्का</string>
+    <string name="crop_soybean">सोयाबीन</string>
+    <string name="crop_cotton">कपास</string>
+    <string name="status_available">उपलब्ध</string>
+    <string name="status_coming_soon">जल्द आ रहा है</string>
+
+    <string name="seed_recommendation">बीज की सिफारिश</string>
+    <string name="seed_recommendation_desc">अपनी खेत की स्थितियों के लिए उपयुक्त मक्का किस्म खोजें।</string>
+    <string name="btn_start_maize">मक्का सिफारिश शुरू करें</string>
+    <string name="btn_start_soybean">सोयाबीन सिफारिश शुरू करें</string>
+    <string name="btn_start_cotton">कपास सिफारिश शुरू करें</string>
+
+    <string name="where_is_farm">आपका खेत कहां स्थित है?</string>
+    <string name="when_grow_maize">मक्का कब उगाने की योजना बना रहे हैं?</string>
+    <string name="when_grow_soybean">सोयाबीन कब उगाने की योजना बना रहे हैं?</string>
+    <string name="when_grow_cotton">कपास कब उगाने की योजना बना रहे हैं?</string>
+    <string name="what_soil_type">आपकी मिट्टी किस प्रकार की है?</string>
+    <string name="how_much_water">कितना पानी उपलब्ध है?</string>
+    <string name="what_problems">आपके क्षेत्र में कौन सी समस्याएं आम हैं?</string>
+    <string name="btn_find_seeds">🔍 उपयुक्त बीज खोजें</string>
+
+    <string name="results_title">मक्का बीज सिफारिशें</string>
+    <string name="results_subtitle">आपके खेत की स्थितियों के आधार पर</string>
+    <string name="recommended_varieties">सिफारिश की गई किस्में</string>
+    <string name="btn_view_details">विवरण देखें</string>
+
+    <string name="crop_calendar">फसल कैलेंडर</string>
+    <string name="crop_advisory">फसल सलाह</string>
+    <string name="crop_health">फसल स्वास्थ्य</string>
+    <string name="notifications_title">सूचनाएं</string>
+    <string name="profile_title">किसान प्रोफ़ाइल</string>
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="about_title">फार्मर-अवेयर के बारे में</string>
+    <string name="btn_logout">लॉगआउट</string>
+    <string name="how_it_works">फार्मर-अवेयर कैसे काम करता है?</string>
+
+    <string name="soil_red">लाल मिट्टी</string>
+    <string name="soil_black">काली मिट्टी</string>
+    <string name="soil_alluvial">जलोढ़ मिट्टी</string>
+    <string name="soil_sandy">रेतीली मिट्टी</string>
+    <string name="soil_loamy">दोमट मिट्टी</string>
+    <string name="soil_other">अन्य</string>
+
+    <string name="water_rainfed">वर्षा आधारित</string>
+    <string name="water_limited">सीमित सिंचाई</string>
+    <string name="water_assured">सुनिश्चित सिंचाई</string>
+    <string name="water_waterlogging">जलभराव की समस्या</string>
+
+    <string name="season_kharif">🌧 खरीफ</string>
+    <string name="season_rabi">❄ रबी</string>
+    <string name="season_spring">🌱 बसंत</string>
+
+    <string name="basic_information">मूल जानकारी</string>
+    <string name="advantages_title">फायदे</string>
+    <string name="trade_offs_title">सीमाएं</string>
+    <string name="evidence_title">कृषि प्रमाण / स्रोत</string>
+
+    <string name="error_network">नेटवर्क उपलब्ध नहीं है। कृपया अपना कनेक्शन जांचें।</string>
+    <string name="error_no_recommendations">उपलब्ध कृषि प्रमाणों का उपयोग करके कोई उपयुक्त किस्म नहीं मिली।</string>
+
+    <string name="disclaimer_evidence">उपलब्ध कृषि प्रमाणों के आधार पर उपयुक्त।</string>
+    <string name="disclaimer_expert">अतिरिक्त विशेषज्ञ/स्थानीय कृषि सलाह आवश्यक हो सकती है।</string>
+</resources>

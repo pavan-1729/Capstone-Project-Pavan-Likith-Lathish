@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_lg">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/what_problems" android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_title" android:textStyle="bold" />
+
+        <CheckBox android:id="@+id/cb_wind" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md" android:padding="@dimen/spacing_sm"
+            android:text="@string/risk_strong_wind" android:textSize="@dimen/text_subtitle" />
+        <CheckBox android:id="@+id/cb_rain" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm" android:text="@string/risk_heavy_rain" android:textSize="@dimen/text_subtitle" />
+        <CheckBox android:id="@+id/cb_waterlog" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm" android:text="@string/risk_waterlogging" android:textSize="@dimen/text_subtitle" />
+        <CheckBox android:id="@+id/cb_drought" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm" android:text="@string/risk_drought" android:textSize="@dimen/text_subtitle" />
+        <CheckBox android:id="@+id/cb_heat" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm" android:text="@string/risk_high_temp" android:textSize="@dimen/text_subtitle" />
+        <CheckBox android:id="@+id/cb_cold" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm" android:text="@string/risk_cold" android:textSize="@dimen/text_subtitle" />
+        <CheckBox android:id="@+id/cb_pest" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm" android:text="@string/risk_pest" android:textSize="@dimen/text_subtitle" />
+        <CheckBox android:id="@+id/cb_disease" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm" android:text="@string/risk_disease" android:textSize="@dimen/text_subtitle" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_lg" android:text="@string/describe_problem"
+            android:textColor="@color/text_secondary" android:textSize="@dimen/text_body" />
+
+        <EditText android:id="@+id/et_description" android:layout_width="match_parent" android:layout_height="100dp"
+            android:layout_marginTop="@dimen/spacing_xs" android:background="@drawable/bg_input_field"
+            android:gravity="top|start" android:hint="@string/hint_describe_problem"
+            android:inputType="textMultiLine" android:padding="@dimen/spacing_sm" android:textSize="@dimen/text_body" />
+    </LinearLayout>
+</ScrollView>

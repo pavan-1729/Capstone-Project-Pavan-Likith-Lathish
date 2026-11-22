@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_lg">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/how_much_water" android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_title" android:textStyle="bold" />
+
+        <LinearLayout android:id="@+id/card_rainfed" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_lg" android:background="@drawable/bg_option_card"
+            android:orientation="vertical" android:padding="@dimen/spacing_md">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/water_rainfed" android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/water_rainfed_desc" android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_body" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/card_limited" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_sm" android:background="@drawable/bg_option_card"
+            android:orientation="vertical" android:padding="@dimen/spacing_md">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/water_limited" android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/water_limited_desc" android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_body" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/card_assured" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_sm" android:background="@drawable/bg_option_card"
+            android:orientation="vertical" android:padding="@dimen/spacing_md">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/water_assured" android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/water_assured_desc" android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_body" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/card_waterlogging" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_sm" android:background="@drawable/bg_option_card"
+            android:orientation="vertical" android:padding="@dimen/spacing_md">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/water_waterlogging" android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/water_waterlogging_desc" android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_body" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

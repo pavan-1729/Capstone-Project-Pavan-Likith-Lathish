@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".FarmerAwareApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SeedAdviosory"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- Splash Screen -->
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SeedAdviosory.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Auth Flow -->
+        <activity
+            android:name=".ui.auth.LanguageSelectionActivity"
+            android:theme="@style/Theme.SeedAdviosory.Auth" />
+
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:theme="@style/Theme.SeedAdviosory.Auth" />
+
+        <activity
+            android:name=".ui.auth.RegisterActivity"
+            android:theme="@style/Theme.SeedAdviosory.Auth" />
+
+        <activity
+            android:name=".ui.auth.ForgotPasswordActivity"
+            android:theme="@style/Theme.SeedAdviosory.Auth" />
+
+        <!-- Main App -->
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:theme="@style/Theme.SeedAdviosory" />
+
+        <!-- Recommendation Flow -->
+        <activity
+            android:name=".ui.recommendation.RecommendationWizardActivity"
+            android:theme="@style/Theme.SeedAdviosory" />
+
+        <activity
+            android:name=".ui.recommendation.RecommendationLoadingActivity"
+            android:theme="@style/Theme.SeedAdviosory" />
+
+        <activity
+            android:name=".ui.recommendation.RecommendationResultsActivity"
+            android:theme="@style/Theme.SeedAdviosory" />
+
+        <activity
+            android:name=".ui.recommendation.VarietyDetailActivity"
+            android:theme="@style/Theme.SeedAdviosory" />
+
+        <activity
+            android:name=".ui.recommendation.EvidenceActivity"
+            android:theme="@style/Theme.SeedAdviosory" />
+
+        <!-- Supporting Screens -->
+        <activity
+            android:name=".ui.calendar.CropCalendarActivity"
+            android:theme="@style/Theme.SeedAdviosory" />
+
+        <activity
+            android:name=".ui.advisory.CropAdvisoryActivity"
+            android:theme="@style/Theme.SeedAdviosory" />
+
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:theme="@style/Theme.SeedAdviosory" />
+
+        <activity
+            android:name=".ui.about.AboutActivity"
+            android:theme="@style/Theme.SeedAdviosory" />
+
+        <activity
+            android:name=".ui.about.HowItWorksActivity"
+            android:theme="@style/Theme.SeedAdviosory" />
+
+        <!-- Weather Detail & 10-Day Forecast -->
+        <activity
+            android:name=".ui.weather.WeatherDetailActivity"
+            android:theme="@style/Theme.SeedAdviosory" />
+
+    </application>
+</manifest>

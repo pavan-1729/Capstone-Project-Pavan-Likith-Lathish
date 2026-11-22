@@ -1,0 +1,61 @@
+{
+  "dataset_name": "Cotton Seed Catalog (ICAR-CICR & AICCIP)",
+  "file_path": "C:\\Users\\gangi\\OneDrive\\Desktop\\Capstone Project\\cotton-seed-rag\\data\\raw\\cotton.csv",
+  "total_records": 265,
+  "total_columns": 50,
+  "missing_required_columns": [],
+  "duplicate_variety_ids": 0,
+  "duplicate_variety_names": 0,
+  "required_empty_counts": {
+    "variety_id": 0,
+    "variety_name": 0,
+    "crop": 0,
+    "category": 0,
+    "season": 0,
+    "maturity_days_min": 0,
+    "maturity_days_max": 0,
+    "recommended_regions": 0,
+    "irrigation_condition": 0,
+    "source_document": 0,
+    "source_pdf_page": 0,
+    "source_printed_page": 0,
+    "source_organization": 0,
+    "source_type": 0,
+    "source_text": 0
+  },
+  "numeric_issues": {
+    "maturity_days_min": 0,
+    "maturity_days_max": 0,
+    "yield_normalized_q_ha_min": 0,
+    "yield_normalized_q_ha_max": 0
+  },
+  "total_missing_values_across_all_columns": 0,
+  "season_distribution": {
+    "Kharif (Irri/Rainfed)": 137,
+    "Kharif": 128
+  },
+  "region_distribution": {
+    "Northern Zone (PB, HR, RJ)": 90,
+    "Southern Zone (AP, TS, TN)": 88,
+    "Central Zone (GJ, MH, MP)": 87
+  },
+  "irrigation_distribution": {
+    "Protective Irrigated": 95,
+    "Irrigated": 93,
+    "Rainfed": 77
+  },
+  "category_distribution": {
+    "Gossypium Hirsutum": 61,
+    "Gossypium Herbaceum": 61,
+    "Gossypium Arboreum": 59,
+    "Bt Cotton Hybrid": 46,
+    "Gossypium Barbadense": 38
+  },
+  "source_organizations": {
+    "MPKV Rahuri": 71,
+    "ICAR-CICR Nagpur": 69,
+    "CCS HAU Hisar": 67,
+    "PAU Ludhiana": 58
+  },
+  "status": "PASSED"
+}

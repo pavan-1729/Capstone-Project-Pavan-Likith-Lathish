@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_md">
+        <Button android:id="@+id/btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            app:backgroundTint="@null"
+            android:text="←"
+            android:textColor="@color/white" android:textSize="24sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_sm" android:text="@string/variety_details"
+            android:textColor="@color/white" android:textSize="@dimen/text_title" android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_md">
+
+            <!-- Name & Suitability -->
+            <TextView android:id="@+id/tv_variety_name" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/text_primary" android:textSize="@dimen/text_headline" android:textStyle="bold" />
+            <TextView android:id="@+id/tv_category" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary" android:textSize="@dimen/text_body" />
+            <TextView android:id="@+id/tv_suitability" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_sm"
+                android:paddingStart="@dimen/spacing_sm" android:paddingEnd="@dimen/spacing_sm"
+                android:paddingTop="4dp" android:paddingBottom="4dp"
+                android:textSize="@dimen/text_caption" android:textStyle="bold" />
+
+            <!-- Why Recommended / AI Explanation -->
+            <LinearLayout
+                android:id="@+id/layout_reason_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_lg"
+                android:background="@drawable/bg_option_card"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_md"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🤖 Why was this variety recommended?"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="@dimen/text_subtitle"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_body" />
+            </LinearLayout>
+
+            <!-- Basic Information -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_lg" android:text="@string/basic_information"
+                android:textColor="@color/text_primary" android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+            <LinearLayout android:id="@+id/layout_basic_info" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_sm" android:orientation="vertical" />
+
+            <!-- Advantages -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_lg" android:text="@string/advantages_title"
+                android:textColor="@color/success" android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+            <LinearLayout android:id="@+id/layout_advantages" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_sm" android:orientation="vertical" />
+
+            <!-- Trade-offs -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_lg" android:text="@string/trade_offs_title"
+                android:textColor="@color/warning" android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+            <LinearLayout android:id="@+id/layout_trade_offs" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_sm" android:orientation="vertical" />
+
+            <!-- Evidence -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_lg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/evidence_title"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/text_subtitle"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_view_full_evidence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    app:backgroundTint="@null"
+                    android:text="View Citations →"
+                    android:textAllCaps="false"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="@dimen/text_caption"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/layout_evidence" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_sm" android:layout_marginBottom="@dimen/spacing_xl"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

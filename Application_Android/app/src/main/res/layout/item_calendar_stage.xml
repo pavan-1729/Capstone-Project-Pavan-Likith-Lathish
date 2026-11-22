@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:gravity="center_vertical" android:orientation="horizontal"
+    android:padding="@dimen/spacing_md" android:layout_marginBottom="@dimen/spacing_sm">
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+        android:gravity="center" android:orientation="vertical">
+        <TextView android:id="@+id/tv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:background="@drawable/bg_circle_icon" android:gravity="center"
+            android:padding="@dimen/spacing_sm" android:textSize="24sp" />
+        <View android:layout_width="2dp" android:layout_height="24dp"
+            android:background="@color/divider" android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_md" android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:id="@+id/tv_stage_name" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+            <TextView android:id="@+id/tv_day_number" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/text_hint" android:textSize="@dimen/text_caption" />
+        </LinearLayout>
+        <TextView android:id="@+id/tv_description" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" android:textColor="@color/text_secondary" android:textSize="@dimen/text_body" />
+        <TextView android:id="@+id/tv_current_badge" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:background="@drawable/bg_suitability_high"
+            android:paddingStart="@dimen/spacing_sm" android:paddingEnd="@dimen/spacing_sm"
+            android:paddingTop="2dp" android:paddingBottom="2dp" android:text="📍 Current Stage"
+            android:textColor="@color/suitability_high" android:textSize="@dimen/text_caption"
+            android:textStyle="bold" android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>
