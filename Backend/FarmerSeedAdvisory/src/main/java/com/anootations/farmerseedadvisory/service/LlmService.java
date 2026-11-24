@@ -171,6 +171,15 @@ public class LlmService {
             JsonObject genConfig = new JsonObject();
             genConfig.addProperty("temperature", geminiTemperature);
             genConfig.addProperty("responseMimeType", "application/json");
+
+            // For Gemini 3 / 2.5 models, disable extended thinking tokens
+            // so recommendations return in 3-5 seconds instead of 60+ seconds
+            if (model.contains("gemini-3") || model.contains("gemini-2.5")) {
+                JsonObject thinkingConfig = new JsonObject();
+                thinkingConfig.addProperty("thinkingBudget", 0);
+                genConfig.add("thinkingConfig", thinkingConfig);
+            }
+
             root.add("generationConfig", genConfig);
 
             RequestBody body = RequestBody.create(
