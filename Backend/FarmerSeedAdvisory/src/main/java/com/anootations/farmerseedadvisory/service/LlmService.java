@@ -125,6 +125,11 @@ public class LlmService {
             return null;
         }
 
+        String maskedKey = geminiApiKey.length() > 8
+                ? geminiApiKey.substring(0, 6) + "..." + geminiApiKey.substring(geminiApiKey.length() - 4)
+                : geminiApiKey;
+        log.info("Initiating Gemini generation (key: {})", maskedKey);
+
         List<String> modelsToTry = buildGeminiModelList();
         OkHttpClient client = new OkHttpClient.Builder()
                 .connectTimeout(15, TimeUnit.SECONDS)
