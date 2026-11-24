@@ -39,10 +39,10 @@ public class LlmService {
     @Value("${gemini.api.key:${GEMINI_API_KEY:YOUR_GEMINI_API_KEY}}")
     private String geminiApiKey;
 
-    @Value("${gemini.model:${GEMINI_MODEL:gemini-3.6-flash}}")
+    @Value("${gemini.model:${GEMINI_MODEL:gemini-3-flash-preview}}")
     private String geminiModel;
 
-    @Value("${gemini.fallback-models:gemini-3.8-flash,gemini-3.7-flash,gemini-3.6-flash,gemini-2.5-flash,gemini-2.0-flash,gemini-1.5-flash,gemini-2.5-flash-lite}")
+    @Value("${gemini.fallback-models:gemini-3-flash-preview,gemini-flash-latest,gemini-3.8-flash,gemini-2.5-flash-lite,gemini-pro-latest}")
     private String geminiFallbackModels;
 
     @Value("${gemini.base-url:https://generativelanguage.googleapis.com/v1beta/models/}")
@@ -181,6 +181,7 @@ public class LlmService {
             Request request = new Request.Builder()
                     .url(url)
                     .header("Content-Type", "application/json")
+                    .header("x-goog-api-key", geminiApiKey)
                     .post(body)
                     .build();
 
