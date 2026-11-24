@@ -39,10 +39,10 @@ public class LlmService {
     @Value("${gemini.api.key:${GEMINI_API_KEY:YOUR_GEMINI_API_KEY}}")
     private String geminiApiKey;
 
-    @Value("${gemini.model:${GEMINI_MODEL:gemini-3-flash-preview}}")
+    @Value("${gemini.model:${GEMINI_MODEL:gemini-3.6-flash}}")
     private String geminiModel;
 
-    @Value("${gemini.fallback-models:gemini-3-flash-preview,gemini-flash-latest,gemini-3.8-flash,gemini-2.5-flash-lite,gemini-pro-latest}")
+    @Value("${gemini.fallback-models:gemini-3.8-flash,gemini-3.7-flash,gemini-3.6-flash,gemini-2.5-flash,gemini-2.0-flash,gemini-1.5-flash,gemini-2.5-flash-lite}")
     private String geminiFallbackModels;
 
     @Value("${gemini.base-url:https://generativelanguage.googleapis.com/v1beta/models/}")
@@ -171,15 +171,6 @@ public class LlmService {
             JsonObject genConfig = new JsonObject();
             genConfig.addProperty("temperature", geminiTemperature);
             genConfig.addProperty("responseMimeType", "application/json");
-
-            // For Gemini 3 / 2.5 models, disable extended thinking tokens
-            // so recommendations return in 3-5 seconds instead of 60+ seconds
-            if (model.contains("gemini-3") || model.contains("gemini-2.5")) {
-                JsonObject thinkingConfig = new JsonObject();
-                thinkingConfig.addProperty("thinkingBudget", 0);
-                genConfig.add("thinkingConfig", thinkingConfig);
-            }
-
             root.add("generationConfig", genConfig);
 
             RequestBody body = RequestBody.create(
