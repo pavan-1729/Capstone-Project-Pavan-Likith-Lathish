@@ -42,8 +42,8 @@ public final class AppConfig {
      */
     public static final String BASE_URL = "http://10.230.69.130:8080/";
 
-    /** API timeout in seconds */
-    public static final int API_TIMEOUT = 60;
+    /** API timeout in seconds (120s to allow Gemini LLM agronomic reasoning) */
+    public static final int API_TIMEOUT = 120;
 
     /** App version info */
     public static final String APP_VERSION = "1.0.0";

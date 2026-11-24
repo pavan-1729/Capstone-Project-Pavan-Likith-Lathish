@@ -75,9 +75,9 @@ public class RetrofitClient {
         return new OkHttpClient.Builder()
                 .addInterceptor(new FirebaseTokenInterceptor())
                 .addInterceptor(logging)
-                .connectTimeout(AppConfig.API_TIMEOUT, TimeUnit.SECONDS)
+                .connectTimeout(30, TimeUnit.SECONDS)
                 .readTimeout(AppConfig.API_TIMEOUT, TimeUnit.SECONDS)
-                .writeTimeout(30, TimeUnit.SECONDS)
+                .writeTimeout(AppConfig.API_TIMEOUT, TimeUnit.SECONDS)
                 .build();
     }
 }

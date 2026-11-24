@@ -104,14 +104,18 @@ public class RecommendationLoadingActivity extends AppCompatActivity {
     // ----------------------------------------------------------------
 
     private void animateSteps(String[] steps) {
-        for (int i = 0; i < steps.length; i++) {
-            final int step = i;
-            uiHandler.postDelayed(() -> {
-                if (!isFinishing() && tvLoadingStep != null) {
-                    tvLoadingStep.setText(steps[step]);
+        final int[] index = {0};
+        Runnable stepRunnable = new Runnable() {
+            @Override
+            public void run() {
+                if (!isFinishing() && !navigationComplete && tvLoadingStep != null) {
+                    tvLoadingStep.setText(steps[index[0] % steps.length]);
+                    index[0]++;
+                    uiHandler.postDelayed(this, 3000L);
                 }
-            }, i * 1200L);
-        }
+            }
+        };
+        uiHandler.post(stepRunnable);
     }
 
     // ----------------------------------------------------------------
